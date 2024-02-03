@@ -36,12 +36,19 @@ const Footer = () => {
   const [quotes, setQuotes] = useState<Quote[]>([]);
 
   useEffect(() => {
-    fetch("https://api.quotable.io/quotes/random?limit=1")
-      .then((response) => response.json())
-      .then((data) => {
+    const fetchQuotes = async () => {
+      try {
+        const response = await fetch(
+          "https://api.quotable.io/quotes/random?limit=1"
+        );
+        const data = await response.json();
         setQuotes(data);
-      })
-      .catch((error) => console.error("Error fetching quotes:", error));
+      } catch (error) {
+        console.error("Error fetching quotes:", error);
+      }
+    };
+
+    fetchQuotes();
   }, []);
 
   return (
