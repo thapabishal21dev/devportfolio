@@ -13,7 +13,6 @@ interface Quote {
   author: string;
 }
 const Footer = () => {
-  let newDate = new Date();
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -21,6 +20,7 @@ const Footer = () => {
       const newDate = new Date();
       setTime(newDate);
     }, 1000);
+
     return () => {
       clearInterval(timeId);
     };
@@ -30,6 +30,8 @@ const Footer = () => {
     hour: "2-digit",
     minute: "2-digit",
   });
+
+  const newDate = new Date();
 
   const getCurrentYear = newDate.getFullYear();
 
@@ -175,7 +177,9 @@ const Footer = () => {
                     <p>
                       <FaClock />
                     </p>
-                    <p>{`${formattedTime} Kathmandu,Nepal`}</p>
+                    {formattedTime && (
+                      <p>{`${formattedTime} Kathmandu,Nepal`}</p>
+                    )}{" "}
                   </div>
                 </div>
               </div>
