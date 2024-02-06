@@ -42,6 +42,7 @@ const AboutPage = () => {
                 src="/nepalflag.svg"
                 width={200}
                 height={200}
+                priority
                 alt="&nbsp;"
               />
             </div>

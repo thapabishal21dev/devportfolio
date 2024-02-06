@@ -197,7 +197,7 @@ const Footer = () => {
                     Made by{" "}
                     <span className="font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-yellow-500 to-green-400 dark:bg-gradient-to-r dark:from-pink-600 dark:to-purple-600">
                       {" "}
-                      BISHAL THAPA & DEV.
+                      BISHAL THAPA
                       <i className="devicon-flutter-plain colored"></i>
                     </span>{" "}
                     All rights reserved &copy;{" "}
