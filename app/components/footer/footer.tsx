@@ -5,7 +5,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import React, { useState, useEffect } from "react";
-import { FaClock } from "react-icons/fa6";
 
 interface Quote {
   _id: string;
@@ -13,24 +12,6 @@ interface Quote {
   author: string;
 }
 const Footer = () => {
-  const [time, setTime] = useState(new Date());
-
-  useEffect(() => {
-    const timeId = setInterval(() => {
-      const newDate = new Date();
-      setTime(newDate);
-    }, 1000);
-
-    return () => {
-      clearInterval(timeId);
-    };
-  }, []);
-
-  const formattedTime = time.toLocaleTimeString([], {
-    hour: "2-digit",
-    minute: "2-digit",
-  });
-
   const newDate = new Date();
 
   const getCurrentYear = newDate.getFullYear();
@@ -173,14 +154,6 @@ const Footer = () => {
                       </div>
                     )}
                   </div>
-                  <div className=" flex flex-row sm:justify-center items-center gap-2 text-sm text-slate-200 font-bold">
-                    <p>
-                      <FaClock />
-                    </p>
-                    {formattedTime && (
-                      <p>{`${formattedTime} Kathmandu,Nepal`}</p>
-                    )}{" "}
-                  </div>
                 </div>
               </div>
             </div>
@@ -224,7 +197,7 @@ const Footer = () => {
                     Made by{" "}
                     <span className="font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-yellow-500 to-green-400 dark:bg-gradient-to-r dark:from-pink-600 dark:to-purple-600">
                       {" "}
-                      BISHAL THAPA.
+                      BISHAL THAPA & DEV.
                       <i className="devicon-flutter-plain colored"></i>
                     </span>{" "}
                     All rights reserved &copy;{" "}
