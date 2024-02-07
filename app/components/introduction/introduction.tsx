@@ -6,28 +6,29 @@ import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
+import { HomepageData } from "@/app/lib/data/data";
 
 const Introduction = () => {
   return (
     <>
-      <div className=" relative  text-black dark:text-white z-10 flex justify-center ">
+      <div className=" relative  text-neutral-700 dark:text-neutral-300 z-10 flex justify-center ">
         <div className=" mt-20 w-[780px] md:w-[650px] sm:w-full px-4">
           <div className="flex flex-col justify-between  ">
             <div className=" flex flex-row sm:flex-col-reverse gap-4 mt-12 justify-between">
               <div className=" flex flex-col">
                 <div>
-                  <h1 className=" text-5xl bg-gradient-to-r from-[#777777] to-[#003cff]  inline-block text-transparent bg-clip-text font-extrabold ">
-                    BISHAL THAPA
+                  <h1 className=" text-4xl bg-gradient-to-r from-[#777777] to-[#003cff]  inline-block text-transparent bg-clip-text font-extrabold ">
+                    {HomepageData.fullName}{" "}
                   </h1>
                 </div>
                 <div className="">
-                  <h1 className="dark:text mt-2 from-[#00ffee] to-[#001eff] text-3xl font-bold text-slate-700">
+                  <h1 className="dark:text mt-2 from-[#00ffee] to-[#001eff] text-2xl font-bold text-slate-700">
                     <span className="bg-clip-text dark:text-transparent bg-gradient-to-r from-[#00ffee] to-[#001eff]">
-                      React Developer
+                      {HomepageData.position}
                     </span>{" "}
                   </h1>{" "}
                   <div className=" flex flex-row items-center text-2xl text-neutral-700 font-bold dark:text-white">
-                    <span>Kathmandu, Nepal</span>
+                    <span> {HomepageData.location}</span>
                     <Image
                       className="rounded-full w-8"
                       src="/nepalflag.svg"
@@ -38,7 +39,7 @@ const Introduction = () => {
                   </div>
                 </div>
               </div>
-              <div className=" flex  ">
+              <div className="flex">
                 <Image
                   className=" rounded-[50%] h-[150px] w-[150px] shadow-[rgba(0,_0,_0,_0.5)_0px_10px_10px]"
                   src="/portfolio.jpg"
@@ -49,15 +50,9 @@ const Introduction = () => {
                 />
               </div>
             </div>
-            <div className="flex dark:text-white flex-col sm:justify-center font-medium text-[16px] text-black mt-4">
+            <div className="flex  flex-col sm:justify-center font-medium text-[15px] mt-6">
               <p className=" md:w-[520px] sm:w-full  ">
-                Motivated Junior React Developer with knowledge in JavaScript
-                (ES6), ReactJS , Nextjs and many others Frontend Techstack.
-                Dedicated to delivering high-quality, responsive user interfaces
-                and enhancing functionality through API integration. A
-                collaborative team player with a passion for innovative projects
-                and a commitment to continuous skill enhancement in software
-                development.
+                {HomepageData.personalSummary}
               </p>
             </div>
             <div className=" flex flex-row flex-wrap gap-4 my-4 items-center">

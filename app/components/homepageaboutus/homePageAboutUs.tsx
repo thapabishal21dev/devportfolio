@@ -19,7 +19,7 @@ const HomePageAbout = () => {
     <div className=" flex justify-center pt-10 text-black dark:text-white">
       <div className=" w-[780px] md:w-[650px] sm:w-full px-4 ">
         <div>
-          <h1 className="text-3xl  my-5 dark:bg-gradient-to-r dark:from-[#00c8ff] dark:to-[#00ff80] bg-gradient-to-r from-cyan-700 to-green-700 inline-block text-transparent  bg-clip-text font-bold">
+          <h1 className="text-2xl  my-5 dark:bg-gradient-to-r dark:from-[#00c8ff] dark:to-[#00ff80] bg-gradient-to-r from-cyan-700 to-green-700 inline-block text-transparent  bg-clip-text font-bold">
             Skills
           </h1>
         </div>
@@ -86,7 +86,7 @@ const HomePageAbout = () => {
           />
         </div>
         <div className=" py-5">
-          <h1 className="text-3xl py-5 bg-gradient-to-r from-pink-700 to-blue-700 dark:bg-gradient-to-r dark:from-pink-500 dark:to-blue-500 inline-block text-transparent bg-clip-text font-bold">
+          <h1 className="text-2xl py-5 bg-gradient-to-r from-pink-700 to-blue-700 dark:bg-gradient-to-r dark:from-pink-500 dark:to-blue-500 inline-block text-transparent bg-clip-text font-bold">
             Experience
           </h1>
           <div className=" flex flex-col font-bold">

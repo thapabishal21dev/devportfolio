@@ -18,25 +18,26 @@ import {
 } from "react-icons/si";
 
 import { RiReactjsFill } from "react-icons/ri";
+import { AboutPageData } from "../lib/data/data";
 
 const AboutPage = () => {
   return (
-    <div className=" flex justify-center pt-32  text-black dark:text-white">
+    <div className=" flex justify-center pt-32 text-neutral-700 dark:text-neutral-300">
       <div className=" w-[780px] md:w-[650px] sm:w-full px-4 ">
         <div className=" flex flex-col">
           <div className="flex flex-col">
             <p className=" text-2xl">👋</p>
-            <h1 className="text-[40px] bg-gradient-to-r from-[#00c8ff] to-[#00ff80] inline-block text-transparent bg-clip-text font-extrabold">
+            <h1 className="text-3xl bg-gradient-to-r from-[#00c8ff] to-[#00ff80] inline-block text-transparent bg-clip-text font-extrabold">
               {" "}
-              Hey I am Bishal Thapa
+              {AboutPageData.fullName}
             </h1>
           </div>
           <div className=" flex flex-row items-center gap-2 sm:flex-col sm:items-start sm:w-full">
             <div>
-              <p className="  font-bold text-xl">Frontend Developer</p>
+              <p className="  font-bold text-xl"> {AboutPageData.position}</p>
             </div>
             <div className=" flex flex-row ">
-              <p className=" font-bold text-xl">from Kathmandu,Nepal</p>
+              <p className=" font-bold text-xl"> {AboutPageData.location}</p>
               <Image
                 className="w-6"
                 src="/nepalflag.svg"
@@ -48,22 +49,9 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className=" text-justify py-4 flex flex-col gap-4 text-[16px]">
-          <p>
-            A passionate Junior React Developer with a solid foundation in
-            building dynamic and responsive web applications. Over the past 6
-            months , I&apos;ve honed my skills through immersive internships and
-            freelancing projects, where I&apos;ve had the opportunity to
-            contribute to the development of engaging and user-friendly
-            websites.
-          </p>
-          <p>
-            In my internship experience, I gained hands-on experience in
-            React.js, building and efficient components that enhance the overall
-            user experience. Through freelancing, I&apos;ve further solidified
-            my abilities in creating intuitive user interfaces and ensuring
-            seamless interactions.
-          </p>
+        <div className=" text-justify text-neutral-700 dark:text-neutral-300 py-4 flex flex-col gap-4 text-[15px]">
+          <p>{AboutPageData.personalDetails01}</p>
+          <p>{AboutPageData.personalDetails02}</p>
         </div>
         <div>
           <Image
@@ -76,12 +64,7 @@ const AboutPage = () => {
           />
         </div>
         <div>
-          <p>
-            As I embark on the next step of my journey, I&apos;m excited about
-            the prospect of joining a forward-thinking organization where I can
-            continue to learn and contribute to impactful projects. Let&apos;s
-            build something amazing together!
-          </p>
+          <p>{AboutPageData.personalDetails03}</p>
         </div>
         <div>
           <h1 className="text-xl py-5 bg-gradient-to-r from-violet-500 to-pink-500 inline-block text-transparent bg-clip-text font-bold">
@@ -210,7 +193,7 @@ const AboutPage = () => {
           />
         </div>
         <div className=" py-5">
-          <h1 className="text-3xl py-5 bg-gradient-to-r from-pink-700 to-blue-700 dark:bg-gradient-to-r dark:from-pink-500 dark:to-blue-500 inline-block text-transparent bg-clip-text font-bold">
+          <h1 className="text-2xl py-5 bg-gradient-to-r from-pink-700 to-blue-700 dark:bg-gradient-to-r dark:from-pink-500 dark:to-blue-500 inline-block text-transparent bg-clip-text font-bold">
             Experience
           </h1>
           <div className=" flex flex-col font-bold">

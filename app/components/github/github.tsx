@@ -26,7 +26,7 @@ const Github = () => {
   };
 
   return (
-    <div className=" flex justify-center dark:text-white ">
+    <div className=" flex justify-center dark:text-neutral-300 text-neutral-700 ">
       <div className=" w-[780px] md:w-[650px] sm:w-full px-4 ">
         <h1 className=" text-center font-bold text-2xl ">
           Github Contributions

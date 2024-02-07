@@ -1,11 +1,12 @@
 "use client";
 import Link from "next/link";
 import React, { useContext, useEffect, useState } from "react";
-import { FaSun, FaMoon, FaHome } from "react-icons/fa";
+import { FaSun, FaMoon } from "react-icons/fa";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
 import { ApiDataContext } from "@/app/context/context";
 import MobileNav from "@/app/mblnav";
+import { GrHome } from "react-icons/gr";
 interface INavbarElement {
   classList: {
     toggle: (className: string, force?: boolean) => void;
@@ -39,12 +40,6 @@ const Navbar = () => {
 
   const handleClickNav = () => {
     setIsmblNavIcon(!ismblNavIcon);
-  };
-
-  const [showNavModal, setShowNavModal] = useState(false);
-
-  const handleClose = () => {
-    setShowNavModal(!showNavModal);
   };
 
   useEffect(() => {
@@ -89,7 +84,7 @@ const Navbar = () => {
                     alt="avatar"
                     property="priority"
                   /> */}
-                  <FaHome />
+                  <GrHome />
                 </div>
               </Link>
               <div className=" flex gap-4">
