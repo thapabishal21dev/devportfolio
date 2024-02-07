@@ -84,7 +84,7 @@ const AboutPage = () => {
         <div>
           <div className=" flex gap-6 pt-5 flex-row items-center">
             <a
-              href="https://github.com/thapabishal21tech"
+              href="https://github.com/thapabishal21dev"
               target="_blank"
               className="hover:bg-slate-200 p-2 rounded-md dark:hover:bg-slate-800"
             >

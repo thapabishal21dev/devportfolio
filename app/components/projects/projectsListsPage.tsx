@@ -26,7 +26,7 @@ const ProjectsListsPage = () => {
             <div className=" text-md hover:cursor-pointer flex items-center mx-auto my-8">
               <a
                 className=" dark:text-white hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-[length:98%_2px] bg-no-repeat bg-bottom transition hover:translate-x-1"
-                href="https://github.com/thapabishal21tech"
+                href="https://github.com/thapabishal21dev"
                 target="_blank"
               >
                 View more on Github &#10132;

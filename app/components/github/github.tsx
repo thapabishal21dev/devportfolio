@@ -55,7 +55,7 @@ const Github = () => {
           {isClient ? (
             <GitHubCalendar
               style={{ margin: "6px auto" }}
-              username="thapabishal21tech"
+              username="thapabishal21dev"
               blockSize={10}
               blockMargin={3}
               fontSize={14}
@@ -71,11 +71,11 @@ const Github = () => {
         </div>
         <h1 className="my-6 text-md italic  underline cursor-pointer text-center text-green-500">
           <Link
-            href="https://github.com/thapabishal21tech"
+            href="https://github.com/thapabishal21dev"
             title="visit"
             target="_blank"
           >
-            thapabishal21tech on Github - {thisYear.getFullYear()}
+            thapabishal21dev on Github - {thisYear.getFullYear()}
           </Link>
         </h1>
       </div>

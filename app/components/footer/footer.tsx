@@ -99,7 +99,7 @@ const Footer = () => {
                     <li>
                       <a
                         className=" hover:text-slate-300 hover:underline hover:underline-offset-2 flex flex-row items-center gap-2"
-                        href="https://www.github.com/thapabishal21tech/"
+                        href="https://www.github.com/thapabishal21dev/"
                         target="_blank"
                       >
                         {" "}
