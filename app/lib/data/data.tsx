@@ -311,22 +311,22 @@ export const HomepageData: IHomePageData = {
   position: "React Developer ",
   location: "Kathmandu, Nepal",
   personalSummary:
-    "Motivated Junior React Developer with knowledge in JavaScript (ES6), ReactJS , Nextjs and many others Frontend Techstack. Dedicated to delivering high-quality, responsive user interfaces and enhancing functionality through API integration. A collaborative team player with a passion for innovative projects and a commitment to continuous skill enhancement in software development.",
+    "Motivated Junior React Developer with knowledge in JavaScript (ES6), ReactJS , NextJs and many others Frontend Techstack. Dedicated to delivering high-quality, responsive user interfaces and enhancing functionality through API integration. A collaborative team player with a passion for innovative projects and a commitment to continuous skill enhancement in software development.",
 };
 export const AboutPageData: IAboutPageData = {
   fullName: " Hey I am Bishal Thapa",
   position: "Frontend Developer ",
   location: "from Kathmandu,Nepal",
   personalDetails01: `A passionate Junior React Developer with a solid foundation in
-    building dynamic and responsive web applications. Over the past 6
-    months , I've honed my skills through immersive internships and
-    freelancing projects, where I&apos;ve had the opportunity to
+    building dynamic and responsive web applications. Over the past 1
+    years , I've honed my skills through immersive internships and
+    freelancing projects, where I've had the opportunity to
     contribute to the development of engaging and user-friendly
     websites.`,
   personalDetails02:
     "In my internship experience, I gained hands-on experience in React.js, building efficient components that enhance the overall user experience. Through freelancing, I've further solidified my abilities in creating intuitive user interfaces and ensuring seamless interactions.",
 
-  personalDetails03: ` As I embark on the next step of my journey, I&apos;m excited about
+  personalDetails03: ` As I embark on the next step of my journey, I'm excited about
    the prospect of joining a forward-thinking organization where I can
    continue to learn and contribute to impactful projects. Let's
    build something amazing together!`,
