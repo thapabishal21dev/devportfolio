@@ -24,6 +24,10 @@ const metadata: Metadata = {
     "bishal",
     "thapa bishal",
     "devportfolio",
+    " bishal thapa portfolio",
+    "bishalthapa",
+    "thapabishal",
+    "devportfolio",
   ],
 };
 
