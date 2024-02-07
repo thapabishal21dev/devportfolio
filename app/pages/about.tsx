@@ -200,7 +200,7 @@ const AboutPage = () => {
             <div className=" flex flex-row  sm:flex-col gap-10 sm:gap-2 py-10 sm:py-2">
               <div className=" flex flex-row gap-10 min-w-[300px] sm:w-full ">
                 <h1 className=" text-lg sm:font-normal  text-blue-500 sm:text-white  ">
-                  December 2023 - present
+                  November 2023 - present
                 </h1>
               </div>
               <div className=" flex flex-col gap-1">
