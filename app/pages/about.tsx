@@ -22,17 +22,17 @@ import { AboutPageData } from "../lib/data/data";
 
 const AboutPage = () => {
   return (
-    <div className=" flex justify-center pt-32 text-neutral-700 dark:text-neutral-300">
+    <div className=" flex justify-center pt-32 dark:text-slate-200 text-slate-700">
       <div className=" w-[780px] md:w-[650px] sm:w-full px-4 ">
         <div className=" flex flex-col">
-          <div className="flex flex-col">
-            <p className=" text-2xl">👋</p>
+          <div className="flex flex-col animate-slidein [--slidein-delay:300ms] opacity-0">
+            <p className=" text-2xl ">👋</p>
             <h1 className="text-3xl bg-gradient-to-r from-[#00c8ff] to-[#00ff80] inline-block text-transparent bg-clip-text font-extrabold">
               {" "}
               {AboutPageData.fullName}
             </h1>
           </div>
-          <div className=" flex flex-row items-center gap-2 sm:flex-col sm:items-start sm:w-full">
+          <div className=" animate-slidein [--slidein-delay:500ms] opacity-0 flex flex-row items-center gap-2 sm:flex-col sm:items-start sm:w-full">
             <div>
               <p className="  font-bold text-xl"> {AboutPageData.position}</p>
             </div>
@@ -49,13 +49,17 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className=" text-justify text-neutral-700 dark:text-neutral-300 py-4 flex flex-col gap-4 text-[15px]">
-          <p>{AboutPageData.personalDetails01}</p>
-          <p>{AboutPageData.personalDetails02}</p>
+        <div className=" text-justify  py-4 flex flex-col gap-4 text-[15px]">
+          <p className="animate-slidein [--slidein-delay:700ms] opacity-0 ">
+            {AboutPageData.personalDetails01}
+          </p>
+          <p className=" animate-slidein [--slidein-delay:900ms] opacity-0">
+            {AboutPageData.personalDetails02}
+          </p>
         </div>
         <div>
           <Image
-            className=" w-full rounded-lg grayscale my-10 bg-slate-400"
+            className=" animate-slidein [--slidein-delay:1100ms] opacity-0 w-full rounded-lg grayscale my-10 bg-slate-400"
             src={"/photo.jpg"}
             width={700}
             height={700}
@@ -89,7 +93,7 @@ const AboutPage = () => {
               className="hover:bg-slate-200 p-2 rounded-md dark:hover:bg-slate-800"
             >
               {" "}
-              <p className=" text-[24px] dark:text-white">
+              <p className=" text-[24px] ">
                 <FaGithub />
               </p>
             </a>
@@ -99,7 +103,7 @@ const AboutPage = () => {
               className="hover:bg-slate-200 p-2 rounded-md dark:hover:bg-slate-800"
             >
               {" "}
-              <p className="  text-[24px] dark:text-white">
+              <p className="  text-[24px] ">
                 <FaLinkedin />
               </p>
             </a>
@@ -110,7 +114,7 @@ const AboutPage = () => {
               className="hover:bg-slate-200 p-2 rounded-md dark:hover:bg-slate-800"
             >
               {" "}
-              <p className="  text-[24px] dark:text-white">
+              <p className="  text-[24px] ">
                 <FaXTwitter />
               </p>
             </a>
@@ -119,7 +123,7 @@ const AboutPage = () => {
               className="hover:bg-slate-200 p-2 rounded-md dark:hover:bg-slate-800"
             >
               {" "}
-              <p className=" text-[24px] dark:text-white">
+              <p className=" text-[24px] ">
                 <MdEmail />
               </p>
             </a>
@@ -208,14 +212,14 @@ const AboutPage = () => {
                   Junior React Developer
                 </h1>
                 <p className=" text-sm text-green-500 ">Freelancher</p>
-                <p className=" text-md dark:text-slate-300">
+                <p className=" text-md ">
                   working in dashboard and personal projects
                 </p>
               </div>
             </div>
             <div className=" flex flex-row sm:flex-col sm:gap-2 gap-10 py-10">
               <div className=" flex flex-row gap-10 min-w-[300px]  ">
-                <h1 className=" text-lg sm:font-normal  text-blue-500  sm:text-white  ">
+                <h1 className=" text-lg sm:font-normal  text-blue-500  ">
                   June 2023 - September 2023
                 </h1>
               </div>
@@ -224,9 +228,7 @@ const AboutPage = () => {
                   React Intern
                 </h1>
                 <p className=" text-sm text-green-500 ">LancemeUp</p>
-                <p className=" text-md dark:text-slate-300">
-                  worked in different web application
-                </p>
+                <p className=" text-md ">worked in different web application</p>
               </div>
             </div>
           </div>

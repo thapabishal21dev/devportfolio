@@ -31,7 +31,7 @@ const config: Config = {
         }
       },
       animation:{
-        slidein:"slidein 2s ease-in-out var(--slidein-delay,0) forwards",
+        slidein:"slidein 1s ease-in-out var(--slidein-delay,0) forwards",
        
       }
     }

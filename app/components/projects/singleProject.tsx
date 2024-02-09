@@ -32,22 +32,24 @@ const SingleProject = () => {
       <div>
         {selectProject && (
           <div className="  dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-950 to-black flex justify-center dark:text-neutral-300 ">
-            <div className=" w-[780px] my-24 md:w-[650px] sm:w-full px-4  ">
+            <div className=" w-[780px] my-24 md:w-[650px] sm:w-full px-4">
               <Link href="/projects">
-                <button className=" text-sm flex flex-row items-center gap-1 border-2 dark:border-slate-800 border-neutral-300  hover:bg-neutral-100 dark:hover:bg-gray-800 rounded-2xl px-3 py-1">
-                  <PiArrowLeftLight />
-                  Back to project
-                </button>
+                <div className=" mt-6 animate-slidein [--slidein-delay:300ms] opacity-0">
+                  <button className=" text-sm flex flex-row items-center gap-1 border-2 dark:border-slate-800 border-neutral-300  hover:bg-neutral-100 dark:hover:bg-gray-800 rounded-2xl px-3 py-1">
+                    <PiArrowLeftLight />
+                    Back to project
+                  </button>
+                </div>
               </Link>
               <div className=" pt-6">
-                <div className=" flex flex-row justify-start items-center gap-8">
+                <div className="animate-slidein [--slidein-delay:500ms] opacity-0 flex flex-row justify-start items-center gap-8">
                   <div className="">
-                    <h1 className="text-2xl  font-bold bg-gradient-to-br to-slate-500 from-neutral-800 text-transparent bg-clip-text dark:bg-bg-gradient-to-br dark:to-slate-300 dark:from-neutral-500">
+                    <h1 className="text-2xl font-bold bg-gradient-to-br to-slate-500 from-neutral-800 text-transparent bg-clip-text dark:bg-bg-gradient-to-br dark:to-slate-300 dark:from-neutral-500">
                       {selectProject.projectTitle}
                     </h1>
                   </div>
                 </div>
-                <div className=" flex flex-row  items-center gap-2 my-4">
+                <div className="animate-slidein [--slidein-delay:700ms] opacity-0 flex flex-row  items-center gap-2 my-4">
                   {" "}
                   <a
                     href={`https://${selectProject.projectLink}`}
@@ -72,8 +74,8 @@ const SingleProject = () => {
                 </div>
               </div>
               <div>
-                <div className=" flex justify-center ">
-                  <div className=" dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-700 bg-gradient-to-r from-slate-200 to-slate-400 rounded px-20 py-16 md:p-12 sm:p-6">
+                <div className=" flex justify-center">
+                  <div className="animate-slidein [--slidein-delay:900ms] opacity-0 dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-700 bg-gradient-to-r from-slate-200 to-slate-400 rounded px-20 py-16 md:p-12 sm:p-6">
                     <Image
                       src={selectProject.projectImg ?? "/wallpaper.png"}
                       alt={
@@ -87,7 +89,7 @@ const SingleProject = () => {
                     />
                   </div>
                 </div>
-                <div className="  flex py-6">
+                <div className=" flex py-6">
                   <p>{selectProject.projectDescription}</p>
                 </div>{" "}
                 <div className="  flex flex-row flex-wrap gap-4 ">

@@ -35,6 +35,7 @@ export interface IProject {
   projectTitleColor1st?: string;
   projectTitleColor2nd?: string;
   projectTechStack?: IprojectTechStack[];
+  projectAnimate?: string;
 }
 
 export const ProjectsList: IProject[] = [
@@ -52,6 +53,7 @@ export const ProjectsList: IProject[] = [
     projectShadowColorLight: `hover:drop-shadow-[0_0_6px_#22c55e]`,
     projectTitleColor1st: "from-green-400",
     projectTitleColor2nd: "to-slate-500",
+    projectAnimate: "animate-slidein [--slidein-delay:500ms] opacity-0",
     projectTechStack: [
       {
         techName: "ReactJs",
@@ -101,6 +103,8 @@ export const ProjectsList: IProject[] = [
     projectShadowColorLight: `hover:drop-shadow-[0_0_6px_#3b82f6]`,
     projectTitleColor1st: "from-blue-400",
     projectTitleColor2nd: "to-slate-500",
+    projectAnimate: "animate-slidein [--slidein-delay:700ms] opacity-0",
+
     projectTechStack: [
       {
         techName: "ReactJs",
@@ -161,6 +165,8 @@ export const ProjectsList: IProject[] = [
     projectShadowColorLight: `hover:drop-shadow-[0_0_6px_#06b6d4]`,
     projectTitleColor1st: "from-cyan-400",
     projectTitleColor2nd: "to-slate-500",
+    projectAnimate: "animate-slidein [--slidein-delay:900ms] opacity-0",
+
     projectTechStack: [
       {
         techName: "ReactJs",
@@ -190,6 +196,8 @@ export const ProjectsList: IProject[] = [
     projectShadowColorLight: `hover:drop-shadow-[0_0_6px_#8b5cf6]`,
     projectTitleColor1st: "from-violet-400",
     projectTitleColor2nd: "to-slate-500",
+    projectAnimate: "animate-slidein [--slidein-delay:1100ms] opacity-0",
+
     projectTechStack: [
       {
         techName: "ReactJs",
@@ -226,6 +234,8 @@ export const ProjectsList: IProject[] = [
     projectShadowColorLight: `hover:drop-shadow-[0_0_6px_#ec4899]`,
     projectTitleColor1st: "from-pink-400",
     projectTitleColor2nd: "to-slate-500",
+    projectAnimate: "animate-slidein [--slidein-delay:1300ms] opacity-0",
+
     projectTechStack: [
       {
         techName: "ReactJs",
@@ -267,6 +277,8 @@ export const ProjectsList: IProject[] = [
     projectShadowColorLight: `hover:drop-shadow-[0_0_6px_#0ea5e9]`,
     projectTitleColor1st: "from-sky-400",
     projectTitleColor2nd: "to-slate-500",
+    projectAnimate: "animate-slidein [--slidein-delay:1500ms] opacity-0",
+
     projectTechStack: [
       {
         techName: "ReactJs",
