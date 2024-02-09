@@ -6,6 +6,7 @@ interface ITechStackProps {
   techImg?: any;
   HoverBorderColor?: string;
   hoverBgColor?: string;
+  slideClass?: string;
 }
 
 const Techstack = (props: ITechStackProps) => {
@@ -13,11 +14,14 @@ const Techstack = (props: ITechStackProps) => {
   const getTechImg = props.techImg;
   const getBorderColor = props.HoverBorderColor;
   const getBgColor = props.hoverBgColor;
+  const getslideClass = props.slideClass;
+
+  console.log("slideclassName", getslideClass);
 
   return (
     <>
       <div
-        className={` w-fit px-3 py-1 rounded-md flex flex-row  items-center gap-2 cursor-pointer border-1 ${getBorderColor} ${getBgColor} hover:bg-opacity-60 dark:bg-opacity-40 min-h-9  border-[1px] border-slate-500`}
+        className={` ${getslideClass} w-fit px-3 py-1 rounded-md flex flex-row  items-center gap-2 cursor-pointer border-1 ${getBorderColor} ${getBgColor} hover:bg-opacity-60 dark:bg-opacity-40 min-h-9  border-[1px] border-slate-500`}
       >
         <div>
           <p className=" text-[18px] text-slate-700 dark:text-neutral-300 ">
