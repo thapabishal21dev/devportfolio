@@ -21,7 +21,7 @@ const ListProjects = ({ params, projectData }: IPropsProjectList) => {
       <div onClick={handleClick}>
         <Link href={`/projects/${params}`}>
           <div
-            className={`cursor-pointer space-y-2 overflow-hidden  border-base-800 dark:border-gray-700 border-2 dark:hover:border-2  dark:hover:bg-gradient-to-br from-base-900 to-base-900/80 ${projectData.projectBorderColor} ${projectData.projectShadowColor} ${projectData.projectBorderColorLight} ${projectData.projectBgColorLight} ${projectData.projectShadowColorLight} bg-[#f5f9fe] transition duration-100  flex flex-row items-center  dark:bg-slate-950 ease-in-out  dark:text-slate-400 rounded-xl h-24 px-3 py-2`}
+            className={`cursor-pointer space-y-2 overflow-hidden  border-base-800 dark:border-gray-700 border-2 dark:hover:border-2  dark:hover:bg-gradient-to-br from-base-900 to-base-900/80 ${projectData.projectBorderColor} ${projectData.projectShadowColor} ${projectData.projectBorderColorLight} ${projectData.projectBgColorLight} ${projectData.projectShadowColorLight} bg-[#f5f9fe] transition duration-100  flex flex-row items-center  dark:bg-slate-950 dark:text-slate-400 rounded-xl h-24 px-3 py-2 hover:scale-[1.01]`}
           >
             {" "}
             <div

@@ -55,7 +55,7 @@ const AboutPage = () => {
         </div>
         <div>
           <Image
-            className=" w-full rounded-lg my-10 bg-slate-400"
+            className=" w-full rounded-lg grayscale my-10 bg-slate-400"
             src={"/photo.jpg"}
             width={700}
             height={700}
