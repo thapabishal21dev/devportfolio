@@ -17,15 +17,15 @@ const Introduction = () => {
             <div className=" flex  flex-row sm:flex-col-reverse gap-4 mt-12 justify-between">
               <div className=" flex flex-col">
                 <div>
-                  <h1 className=" animate-slidein [--slidein-delay:300ms] opacity-0 text-5xl bg-gradient-to-r from-slate-300 to-indigo-600  inline-block text-transparent bg-clip-text font-extrabold ">
+                  <h1 className=" animate-slidein [--slidein-delay:300ms] opacity-0 text-5xl bg-gradient-to-r from-slate-300 to-indigo-600  inline-block text-transparent bg-clip-text font-extrabold sm:text-4xl ">
                     {HomepageData.fullName}{" "}
                   </h1>
                 </div>
                 <div className="">
-                  <h1 className=" animate-slidein [--slidein-delay:500ms] opacity-0 text-2xl bg-gradient-to-r from-indigo-500 to-indigo-600  inline-block text-transparent bg-clip-text font-extrabold ">
+                  <h1 className=" animate-slidein [--slidein-delay:700ms] opacity-0 text-2xl bg-gradient-to-r from-indigo-500 to-indigo-600  inline-block text-transparent bg-clip-text font-extrabold ">
                     {HomepageData.position}
                   </h1>
-                  <div className="animate-slidein [--slidein-delay:500ms] opacity-0 flex flex-row items-center text-2xl text-slate-700 font-bold dark:text-slate-300">
+                  <div className="animate-slidein [--slidein-delay:700ms] opacity-0 flex flex-row items-center text-2xl text-slate-700 font-bold dark:text-slate-300">
                     <span> {HomepageData.location}</span>
                     <Image
                       className="rounded-full w-8"
@@ -65,12 +65,12 @@ const Introduction = () => {
                 </div>
               </div>
             </div>
-            <div className=" animate-slidein [--slidein-delay:700ms]  opacity-0 flex  flex-col sm:justify-center dark:text-slate-300 font-medium text-[15px] mt-6">
-              <p className=" md:w-[520px] sm:w-full  ">
+            <div className=" animate-slidein [--slidein-delay:900ms] opacity-0 flex  flex-col sm:justify-center dark:text-slate-300 font-medium text-[15px] mt-6">
+              <p className=" md:w-[520px] sm:w-full ">
                 {HomepageData.personalSummary}
               </p>
             </div>
-            <div className=" animate-slidein [--slidein-delay:900ms] opacity-0 flex flex-row flex-wrap gap-4 my-4 items-center">
+            <div className=" animate-slidein [--slidein-delay:1100ms] opacity-0 flex flex-row flex-wrap gap-4 my-4 items-center">
               <Link href="/about">
                 {" "}
                 <button className=" flex flex-row gap-2 items-center bg-indigo-700 rounded-lg text-white px-2 py-2 hover:bg-indigo-900 text-md ">

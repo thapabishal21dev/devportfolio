@@ -73,7 +73,7 @@ const Navbar = () => {
           }`}
         >
           <div>
-            <div className=" flex justify-between items-center">
+            <div className=" flex justify-between items-center ">
               <Link href="/">
                 <div className=" flex flex-row gap-1 items-center dark:hover:bg-slate-900 px-3 py-2 hover:rounded-lg hover:cursor-pointer hover:bg-slate-200 transition rounded-lg delay-25 ease-in-out">
                   {/* <Image
@@ -143,10 +143,10 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className=" sm:hidden md:hidden">
+      <div className=" sm:hidden md:hidden ">
         <div id="navbar" className="flex justify-center  ">
-          <nav className=" fixed  border-2 border-slate-200 dark:border-slate-700 top-4 mt-2 z-50  w-[780px] md:w-fit rounded-xl bg-[#e3edfe] dark:bg-slate-950  h-14 backdrop-blur-[6px] transition-all duration-500 ease-out delay-0 bg-opacity-50">
-            <ul className=" p-2 text-[16px] md:bg-cyan-500  md: sm:bg-red-500 flex-row gap-8 dark:text-slate-300 flex font-medium items-center">
+          <nav className=" fixed bg-[#e3edfe] border-2 border-slate-200 dark:border-slate-700 top-4 mt-2 z-50  w-[780px] md:w-fit rounded-xl  dark:bg-slate-950  h-14 backdrop-blur-[6px] transition-all duration-500 ease-out delay-0 bg-opacity-50">
+            <ul className=" p-2 text-[16px]   md:bg-cyan-500  md: sm:bg-red-500 flex-row gap-8 dark:text-slate-300 flex font-medium items-center">
               {/* <li className=" text-xl rounded-xl p-2">
                 <Link href="/">
                   <Image
@@ -156,6 +156,7 @@ const Navbar = () => {
                     height={400}
                     alt="avatar"
                     property="priority"
+                    bg-[#e3edfe]
                   />
                   <FaHome />
                 </Link>

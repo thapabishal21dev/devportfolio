@@ -20,18 +20,18 @@ const config: Config = {
         slidein:{
           from:{
             opacity:"0",
-            transform:"traslateY-(-10px)",
+            transform:"traslateY-(0px)",
 
           },
           to:{
             opacity:"1",
-            transform:"translateY(0)",
+            transform:"translateY(8px)",
 
           }
         }
       },
       animation:{
-        slidein:"slidein 1s ease-in-out var(--slidein-delay,0) forwards",
+        slidein:"slidein 2s ease-in-out var(--slidein-delay,0) forwards",
        
       }
     }
