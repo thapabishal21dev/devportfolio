@@ -17,7 +17,7 @@ const Skills = () => {
   return (
     <div>
       <div>
-        <h1 className=" animate-slidein [--slidein-delay:1000ms] opacity-0 text-2xl dark:bg-gradient-to-r dark:from-[#00c8ff] dark:to-[#00ff80] bg-gradient-to-r from-cyan-700 to-green-700 inline-block text-transparent  bg-clip-text font-bold">
+        <h1 className=" animate-slidein [--slidein-delay:1000ms] opacity-0 text-2xl dark:bg-gradient-to-r dark:from-cyan-500 dark:to-green-500 bg-gradient-to-r from-cyan-700 to-green-700 inline-block text-transparent  bg-clip-text font-bold">
           Skills
         </h1>
       </div>

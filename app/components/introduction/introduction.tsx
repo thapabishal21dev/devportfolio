@@ -17,18 +17,18 @@ const Introduction = () => {
             <div className=" flex  flex-row sm:flex-col-reverse gap-4 mt-12 justify-between">
               <div className=" flex flex-col">
                 <div>
-                  <h1 className=" animate-slidein [--slidein-delay:300ms] opacity-0 text-5xl bg-gradient-to-r from-slate-300 to-indigo-600  inline-block text-transparent bg-clip-text font-extrabold sm:text-4xl ">
+                  <h1 className=" animate-slidein [--slidein-delay:300ms] opacity-0 text-5xl bg-gradient-to-r dark:from-slate-300 dark:to-slate-600  inline-block text-transparent bg-clip-text font-extrabold from-gray-700 to-slate-400 sm:text-4xl ">
                     {HomepageData.fullName}{" "}
                   </h1>
                 </div>
                 <div className="">
-                  <h1 className=" animate-slidein [--slidein-delay:500ms] opacity-0 text-2xl bg-gradient-to-r from-indigo-500 to-indigo-600  inline-block text-transparent bg-clip-text font-extrabold ">
+                  <h1 className=" animate-slidein [--slidein-delay:500ms] opacity-0 text-2xl bg-gradient-to-r dark:from-slate-300 dark:to-indigo-300 from-slate-500 to-slate-600  inline-block text-transparent bg-clip-text font-extrabold text-slate-700 ">
                     {HomepageData.position}
                   </h1>
-                  <div className="animate-slidein [--slidein-delay:500ms] opacity-0 flex flex-row items-center text-2xl text-slate-700 font-bold dark:text-slate-300">
+                  <div className="animate-slidein [--slidein-delay:500ms] opacity-0 flex flex-row items-center bg-gradient-to-r text-2xl text-transparent bg-clip-text font-bold dark:from-slate-300 dark:to-indigo-500 from-slate-500 to-slate-600">
                     <span> {HomepageData.location}</span>
                     <Image
-                      className="rounded-full w-8"
+                      className="rounded-full w-7"
                       src="/nepalflag.svg"
                       width={200}
                       height={200}
@@ -73,7 +73,7 @@ const Introduction = () => {
             <div className=" animate-slidein [--slidein-delay:900ms] opacity-0 flex flex-row flex-wrap gap-4 my-4 items-center">
               <Link href="/about">
                 {" "}
-                <button className=" flex flex-row gap-2 items-center bg-indigo-700 rounded-lg text-white px-2 py-2 hover:bg-indigo-900 text-md ">
+                <button className=" flex flex-row gap-2 items-center dark:bg-indigo-900 rounded-lg text-white px-2 py-2 dark:hover:bg-indigo-950 bg-indigo-700 text-md hover:bg-indigo-800">
                   <span className=" text-xl ">
                     <IoPersonSharp />
                   </span>
@@ -85,7 +85,7 @@ const Introduction = () => {
                   <a
                     href="https://github.com/thapabishal21dev"
                     target="_blank"
-                    className="hover:bg-slate-200 p-1 rounded-md dark:hover:bg-slate-800"
+                    className="hover:bg-slate-300 p-1 rounded-md dark:hover:bg-slate-800"
                   >
                     {" "}
                     <p className=" text-[24px] dark:text-white">
@@ -95,7 +95,7 @@ const Introduction = () => {
                   <a
                     href="https://www.linkedin.com/in/thapa-bishal-64340622a/"
                     target="_blank"
-                    className="hover:bg-slate-200 p-1 rounded-md dark:hover:bg-slate-800"
+                    className="hover:bg-slate-300 p-1 rounded-md dark:hover:bg-slate-800"
                   >
                     {" "}
                     <p className="  text-[24px] dark:text-white">
@@ -105,7 +105,7 @@ const Introduction = () => {
                   <a
                     href="https://twitter.com/"
                     target="_blank"
-                    className="hover:bg-slate-200 p-1 rounded-md dark:hover:bg-slate-800"
+                    className="hover:bg-slate-300 p-1 rounded-md dark:hover:bg-slate-800"
                   >
                     {" "}
                     <p className="  text-[24px] dark:text-white">
@@ -115,7 +115,7 @@ const Introduction = () => {
                   <a
                     href="mailto:thapabishal21dev@gmail.com"
                     target="_blank"
-                    className="hover:bg-slate-200 p-1 rounded-md dark:hover:bg-slate-800"
+                    className="hover:bg-slate-300 p-1 rounded-md dark:hover:bg-slate-800"
                   >
                     {" "}
                     <p className=" text-[24px] dark:text-white">

@@ -16,8 +16,6 @@ const Techstack = (props: ITechStackProps) => {
   const getBgColor = props.hoverBgColor;
   const getslideClass = props.slideClass;
 
-  console.log("slideclassName", getslideClass);
-
   return (
     <>
       <div
