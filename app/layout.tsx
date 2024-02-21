@@ -40,6 +40,8 @@ export default function RootLayout({
     colorScheme: "dark",
   });
   const [userApiData, setUserApiData] = useState<string | undefined>();
+
+  const [blogId, setBlogId] = useState<string | undefined>();
   return (
     <html lang="en" className="dark scroll-smooth ">
       <body className={`${inter.className} dark:bg-slate-950 `}>
@@ -50,6 +52,8 @@ export default function RootLayout({
               updateTheme,
               setUserApiData,
               setUpdateTheme,
+              setBlogId,
+              blogId,
             }}
           >
             <Navbar />

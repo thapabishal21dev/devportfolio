@@ -61,10 +61,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div
-        id="navbar"
-        className=" fixed z-50 dark:text-white w-full lg:hidden "
-      >
+      <div id="navbar" className="z-50 dark:text-white w-full lg:hidden ">
         <div
           className={` ${
             ismblNavIcon
@@ -144,8 +141,8 @@ const Navbar = () => {
         </div>
       </div>
       <div className=" sm:hidden md:hidden ">
-        <div id="navbar" className="flex justify-center  ">
-          <nav className=" fixed bg-[#e3edfe] border-2 border-slate-200 dark:border-slate-700 top-4 mt-2 z-50  w-[780px] md:w-fit rounded-xl  dark:bg-slate-950  h-14 backdrop-blur-[6px] transition-all duration-500 ease-out delay-0 bg-opacity-50">
+        <div id="navbar" className="flex justify-center">
+          <nav className="  bg-[#e3edfe] border-2 border-slate-200 dark:border-slate-700 top-4 mt-4 z-50  w-[780px] md:w-fit rounded-xl  dark:bg-slate-950 backdrop-blur-[6px] transition-all duration-500 ease-out delay-0 bg-opacity-50">
             <ul className=" p-2 text-[16px]   md:bg-cyan-500  md: sm:bg-red-500 flex-row gap-8 dark:text-slate-300 flex font-medium items-center">
               {/* <li className=" text-xl rounded-xl p-2">
                 <Link href="/">
