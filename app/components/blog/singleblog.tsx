@@ -55,7 +55,6 @@ const SingleBlog = ({ params, postTitle, postDate, postReactions }: Iprops) => {
                 </div>
               ))}
             </div>
-            <div></div>
           </div>
         </div>
       </Link>
