@@ -66,46 +66,4 @@ export const AllBlogData: IAllBlogData[] = [
       },
     ],
   },
-  {
-    postId: 3,
-    postTitle: "About NextJs",
-    postDate: "2024-2-21",
-    postContent: [
-      {
-        contentTitle: "contentTitle",
-        contentDiscription:
-          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perferendis ea at nesciunt tempore ducimus laborum asperiores repellendus necessitatibus sunt illum, impedit ipsum quidem tempora aut iste id qui blanditiis.",
-      },
-    ],
-    postReactions: [
-      {
-        like: "2",
-        wow: "0",
-        love: "5",
-        rocket: "0",
-        cup: "2",
-      },
-    ],
-  },
-  {
-    postId: 4,
-    postTitle: "About ReactJs",
-    postDate: "2024-2-21",
-    postContent: [
-      {
-        contentTitle: "contentTitle",
-        contentDiscription:
-          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perferendis ea at nesciunt tempore ducimus laborum asperiores repellendus necessitatibus sunt illum, impedit ipsum quidem tempora aut iste id qui blanditiis.",
-      },
-    ],
-    postReactions: [
-      {
-        like: "4",
-        wow: "0",
-        love: "1",
-        rocket: "0",
-        cup: "2",
-      },
-    ],
-  },
 ];

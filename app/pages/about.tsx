@@ -19,11 +19,12 @@ import {
 
 import { RiReactjsFill } from "react-icons/ri";
 import { AboutPageData } from "../lib/data/data";
+import BlogListUl from "../components/blog/bloglistUl";
 
 const AboutPage = () => {
   return (
-    <div className=" flex justify-center pt-32 dark:text-slate-200 text-slate-700">
-      <div className=" w-[780px] md:w-[650px] sm:w-full px-4 ">
+    <div className=" flex justify-center mt-0 dark:text-slate-200 text-slate-700">
+      <div className=" w-[780px] mt-12 md:w-[650px] sm:w-full px-4 ">
         <div className=" flex flex-col">
           <div className="flex flex-col animate-slidein [--slidein-delay:300ms] opacity-0">
             <p className=" text-2xl ">👋</p>
@@ -130,7 +131,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div>
-          <h1 className="text-xl py-5 bg-gradient-to-r from-cyan-500 to-green-500 inline-block text-transparent bg-clip-text font-bold">
+          <h1 className="text-2xl mt-4 bg-gradient-to-r from-cyan-500 to-green-500 inline-block text-transparent bg-clip-text font-bold">
             Skills
           </h1>
         </div>
@@ -195,6 +196,12 @@ const AboutPage = () => {
             HoverBorderColor="hover:border-[#f14e32]"
             hoverBgColor="hover:bg-[#f14e32]"
           />
+        </div>
+        <div>
+          <h1 className="text-2xl mt-4 bg-gradient-to-r from-violet-500 to-pink-500 inline-block text-transparent bg-clip-text font-bold">
+            BlogPost
+          </h1>{" "}
+          <BlogListUl />
         </div>
         <div className=" py-5">
           <h1 className="text-2xl py-5 bg-gradient-to-r from-pink-700 to-blue-700 dark:bg-gradient-to-r dark:from-pink-500 dark:to-blue-500 inline-block text-transparent bg-clip-text font-bold">

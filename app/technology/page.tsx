@@ -4,9 +4,9 @@ import Techstack from "../techstack";
 const Technology = () => {
   return (
     <div className="flex h-auto justify-center  overflow-hidden ">
-      <div className=" w-[780px] h-screen mt-20 dark:text-white md:w-[650px]  px-4 sm:w-full  ">
-        <div className=" mt-14">
-          <h1 className="animate-slidein [--slidein-delay:300ms] opacity-0 text-xl py-5 bg-gradient-to-r from-[#00c8ff] to-[#00ff80] inline-block text-transparent bg-clip-text font-bold">
+      <div className=" w-[780px] h-screen mt-12 dark:text-white md:w-[650px]  px-4 sm:w-full  ">
+        <div className="">
+          <h1 className="animate-slidein [--slidein-delay:300ms] opacity-0 text-2xl py-5 bg-gradient-to-r from-[#00c8ff] to-[#00ff80] inline-block text-transparent bg-clip-text font-bold">
             Skills
           </h1>
         </div>

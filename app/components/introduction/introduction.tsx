@@ -12,9 +12,9 @@ const Introduction = () => {
   return (
     <>
       <div className=" relative  text-neutral-700 dark:text-neutral-300 z-10 flex justify-center ">
-        <div className=" mt-20 w-[780px] md:w-[650px] sm:w-full px-4">
+        <div className=" mt-12 w-[780px] md:w-[650px] sm:w-full px-4">
           <div className="flex flex-col justify-between  ">
-            <div className=" flex  flex-row sm:flex-col-reverse gap-4 mt-12 justify-between">
+            <div className=" flex  flex-row sm:flex-col-reverse gap-4 mt-4 justify-between">
               <div className=" flex flex-col">
                 <div>
                   <h1 className=" animate-slidein [--slidein-delay:300ms] opacity-0 text-5xl bg-gradient-to-r dark:from-slate-300 dark:to-slate-600  inline-block text-transparent bg-clip-text font-extrabold from-gray-700 to-slate-400 sm:text-4xl ">

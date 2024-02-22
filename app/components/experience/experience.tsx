@@ -3,7 +3,7 @@ import React from "react";
 const Experience = () => {
   return (
     <div>
-      <div className=" py-5 ">
+      <div className=" mt-2">
         <h1 className=" text-2xl py-5 bg-gradient-to-r from-pink-700 to-blue-700 dark:bg-gradient-to-r dark:from-pink-500 dark:to-blue-500 inline-block text-transparent bg-clip-text font-bold">
           Experience
         </h1>
