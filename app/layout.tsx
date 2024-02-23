@@ -6,7 +6,8 @@ import { useState } from "react";
 import { ApiDataContext } from "./context/context";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
-
+import { Provider } from "react-redux";
+import store from "./store/store";
 interface IThemeType {
   colorScheme: "light" | "dark";
 }
@@ -46,20 +47,22 @@ export default function RootLayout({
     <html lang="en" className="dark scroll-smooth ">
       <body className={`${inter.className} dark:bg-slate-950 `}>
         <div className="">
-          <ApiDataContext.Provider
-            value={{
-              userApiData,
-              updateTheme,
-              setUserApiData,
-              setUpdateTheme,
-              setBlogId,
-              blogId,
-            }}
-          >
-            <Navbar />
-            {children}
-            <Footer />
-          </ApiDataContext.Provider>
+          <Provider store={store}>
+            <ApiDataContext.Provider
+              value={{
+                userApiData,
+                updateTheme,
+                setUserApiData,
+                setUpdateTheme,
+                setBlogId,
+                blogId,
+              }}
+            >
+              <Navbar />
+              {children}
+              <Footer />
+            </ApiDataContext.Provider>
+          </Provider>
         </div>
       </body>
     </html>

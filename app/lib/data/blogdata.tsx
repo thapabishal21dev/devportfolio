@@ -26,7 +26,7 @@ export interface IPostReactions {
 export const AllBlogData: IAllBlogData[] = [
   {
     postId: 1,
-    postTitle: "About JavaScript",
+    postTitle: "Common JavaScript Errors and How to Avoid Theme",
     postDate: "2024-2-21",
     postContent: [
       {
@@ -47,7 +47,7 @@ export const AllBlogData: IAllBlogData[] = [
   },
   {
     postId: 2,
-    postTitle: "About TypeScript",
+    postTitle: "How to set up a Node server with TypeScript in 2024",
     postDate: "2024-2-21",
     postContent: [
       {

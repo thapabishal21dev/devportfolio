@@ -1,9 +1,15 @@
 "use client";
-import { IAllBlogData, IPostReactions } from "@/app/lib/data/blogdata";
+import { IPostReactions } from "@/app/lib/data/blogdata";
 import Link from "next/link";
 import React from "react";
 import { useContext } from "react";
 import { ApiDataContext } from "@/app/context/context";
+import { FaRegThumbsUp } from "react-icons/fa6";
+import { TbMoodSuprised } from "react-icons/tb";
+import { IoIosRocket, IoMdHeart } from "react-icons/io";
+import { CiCoffeeCup } from "react-icons/ci";
+import { useSelector } from "react-redux";
+import type { RootState } from "@/app/store/store";
 
 interface Iprops {
   params: number;
@@ -12,12 +18,17 @@ interface Iprops {
   postReactions: IPostReactions[];
 }
 
-const SingleBlog = ({ params, postTitle, postDate, postReactions }: Iprops) => {
+const SingleBlog = ({ params, postTitle, postDate }: Iprops) => {
   const { setBlogId } = useContext(ApiDataContext);
 
   const handleClick = () => {
     setBlogId(params);
   };
+
+  const { like, wow, love, rocket, cup } = useSelector(
+    (state: RootState) => state.reactionReducer
+  );
+
   return (
     <div onClick={handleClick}>
       <Link href={`/blog/${postTitle}`}>
@@ -30,30 +41,39 @@ const SingleBlog = ({ params, postTitle, postDate, postReactions }: Iprops) => {
               {postDate}
             </div>
             <div className=" flex gap-2 dark:text-slate-300">
-              {postReactions.map((newItems, index) => (
-                <div className=" flex gap-2 text-sm " key={index}>
-                  <p>
-                    <span>👍</span>
-                    {newItems.like}
-                  </p>
-                  <p>
-                    <span>😮</span>
-                    {newItems.wow}
-                  </p>
-                  <p>
-                    <span>❤️</span>
-                    {newItems.love}
-                  </p>
-                  <p>
-                    <span>🚀</span>
-                    {newItems.rocket}
-                  </p>
-                  <p>
-                    <span>☕</span>
-                    {newItems.cup}
-                  </p>
-                </div>
-              ))}
+              <div className=" flex gap-2 text-sm ">
+                <p className=" flex cursor-pointer  items-center gap-1">
+                  {like}
+                  <span className="text-lg">
+                    <FaRegThumbsUp />
+                  </span>
+                </p>
+                <p className=" flex cursor-pointer  items-center gap-1">
+                  {wow}
+                  <span className=" text-xl">
+                    <TbMoodSuprised />
+                  </span>
+                </p>
+                <p className=" flex cursor-pointer  items-center gap-1">
+                  {love}
+
+                  <span className=" text-xl">
+                    <IoMdHeart />
+                  </span>
+                </p>
+                <p className=" flex cursor-pointer  items-center gap-1">
+                  {rocket}
+                  <span className=" text-xl">
+                    <IoIosRocket />
+                  </span>
+                </p>
+                <p className=" flex cursor-pointer  items-center gap-1">
+                  {cup}
+                  <span className=" text-xl">
+                    <CiCoffeeCup />
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
         </div>

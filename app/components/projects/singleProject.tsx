@@ -32,7 +32,7 @@ const SingleProject = () => {
       <div>
         {selectProject && (
           <div className="  dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-950 to-black flex justify-center dark:text-neutral-300 ">
-            <div className=" w-[780px] my-24 md:w-[650px] sm:w-full px-4">
+            <div className=" w-[780px] my-12 md:w-[650px] sm:w-full px-4">
               <Link href="/projects">
                 <div className=" mt-6 animate-slidein [--slidein-delay:300ms] opacity-0">
                   <button className=" text-sm flex flex-row items-center gap-1 border-2 dark:border-slate-800 border-neutral-300  hover:bg-neutral-100 dark:hover:bg-gray-800 rounded-2xl px-3 py-1">
