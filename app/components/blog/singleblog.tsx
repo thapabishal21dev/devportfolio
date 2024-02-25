@@ -34,7 +34,7 @@ const SingleBlog = ({ params, postTitle, postDate }: Iprops) => {
       <Link href={`/blog/${postTitle}`}>
         <div className=" border-2 border-slate-500 rounded-xl dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-900 px-4 py-2">
           <div className=" flex flex-col gap-2">
-            <h1 className=" dark:text-slate-400 text-slate-700 text-xl font-bold">
+            <h1 className=" dark:text-amber-500 text-slate-700 text-xl font-semibold">
               {postTitle}
             </h1>
             <div className=" text-slate-600 flex flex-row italic items-center text-sm">
