@@ -51,7 +51,7 @@ const Introduction = () => {
                 </div>
                 <div>
                   <Link
-                    href="/resume.pdf"
+                    href="Bishal_Thapa_CV_2024.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
