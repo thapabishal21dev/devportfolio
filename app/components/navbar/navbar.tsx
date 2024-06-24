@@ -159,7 +159,10 @@ const Navbar = () => {
                 </Link>
               </li> */}
               <li className=" dark:hover:text-green-600 hover:text-green-500 hover:underline hover:underline-offset-2  p-2">
-                <Link href="/">Home</Link>
+                <Link href="/">
+                  <span className="absolute duration-200 left-2 transition-all flex-none rounded-full bg-red-500-hover:size-1.5 size-1.5"></span>
+                  Home
+                </Link>
               </li>
               <li className=" dark:hover:text-cyan-600 hover:text-cyan-500 hover:underline hover:underline-offset-2  p-2">
                 <Link href="/about">About</Link>

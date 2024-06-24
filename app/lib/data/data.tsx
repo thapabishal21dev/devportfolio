@@ -11,6 +11,8 @@ import { RiReactjsFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiReactquery } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
+import { SiReacthookform } from "react-icons/si";
+import { SiZod } from "react-icons/si";
 
 export interface IprojectTechStack {
   techName?: string;
@@ -41,6 +43,67 @@ export interface IProject {
 export const ProjectsList: IProject[] = [
   {
     projectId: 1,
+    projectImg: img6,
+    projectTitle: "ecommerce",
+    projectDescription: "Created Portfolio using Nextjs,Reactjs,tailwindCSS",
+    projectLink: "onlinestore24.vercel.app",
+    projectGithub: "/ecommerce",
+    projectBorderColor: "dark:hover:border-blue-500",
+    projectShadowColor: `dark:hover:drop-shadow-[0_0_12px_#3b82f6]`,
+    projectBorderColorLight: "hover:border-blue-500",
+    projectBgColorLight: "hover:bg-blue-100",
+    projectShadowColorLight: `hover:drop-shadow-[0_0_6px_#3b82f6]`,
+    projectTitleColor1st: "from-blue-400",
+    projectTitleColor2nd: "to-slate-500",
+    projectAnimate: "animate-slidein [--slidein-delay:500ms] opacity-0",
+    projectTechStack: [
+      {
+        techName: "ReactJs",
+        techImg: <RiReactjsFill />,
+        HoverBorderColor: "hover:border-cyan-400",
+        hoverBgColor: "hover:bg-cyan-200",
+      },
+      {
+        techName: "JavaScript",
+        techImg: <IoLogoJavascript />,
+        HoverBorderColor: "hover:border-yellow-400",
+        hoverBgColor: "hover:bg-yellow-200",
+      },
+
+      {
+        techName: "NextJs",
+        techImg: <TbBrandNextjs />,
+        HoverBorderColor: "hover:border-slate-400",
+        hoverBgColor: "hover:bg-slate-200",
+      },
+      {
+        techName: "TypeScript",
+        techImg: <SiTypescript />,
+        HoverBorderColor: "hover:border-blue-400",
+        hoverBgColor: "hover:bg-blue-200",
+      },
+      {
+        techName: "TailwindCSS",
+        techImg: <SiTailwindcss />,
+        HoverBorderColor: "hover:border-green-400",
+        hoverBgColor: "hover:bg-green-200",
+      },
+      {
+        techName: "React-Hook-Form",
+        techImg: <SiReacthookform />,
+        HoverBorderColor: "hover:border-pink-400",
+        hoverBgColor: "hover:bg-pink-200",
+      },
+      {
+        techName: "Zod",
+        techImg: <SiZod />,
+        HoverBorderColor: "hover:border-sky-400",
+        hoverBgColor: "hover:bg-sky-200",
+      },
+    ],
+  },
+  {
+    projectId: 2,
     projectImg: img6,
     projectTitle: "Portfolio",
     projectDescription: "Created Portfolio using Nextjs,Reactjs,tailwindCSS",
@@ -89,7 +152,7 @@ export const ProjectsList: IProject[] = [
     ],
   },
   {
-    projectId: 2,
+    projectId: 3,
     projectImg: img5,
     projectTitle: "Turnstone-Education",
     projectDescription:
@@ -152,7 +215,7 @@ export const ProjectsList: IProject[] = [
     ],
   },
   {
-    projectId: 3,
+    projectId: 4,
     projectImg: img4,
     projectTitle: "React-Taskapp",
     projectDescription: "crudtask-app",
@@ -183,7 +246,7 @@ export const ProjectsList: IProject[] = [
     ],
   },
   {
-    projectId: 4,
+    projectId: 5,
     projectImg: img3,
     projectTitle: "Crud-App",
     projectDescription: "fullcrud-task-app",
@@ -221,7 +284,7 @@ export const ProjectsList: IProject[] = [
     ],
   },
   {
-    projectId: 5,
+    projectId: 6,
     projectImg: img1,
     projectTitle: "tailwind-Responsive-Site",
     projectDescription: "full resonsive website",
@@ -264,7 +327,7 @@ export const ProjectsList: IProject[] = [
     ],
   },
   {
-    projectId: 6,
+    projectId: 7,
     projectImg: img2,
     projectTitle: "Responsive-Site",
     projectDescription: "responsive site",
