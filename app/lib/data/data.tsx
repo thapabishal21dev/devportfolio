@@ -4,6 +4,7 @@ import img3 from "@/public/projectImg/img3.png";
 import img4 from "@/public/projectImg/img4.png";
 import img5 from "@/public/projectImg/img5.png";
 import img6 from "@/public/projectImg/img6.png";
+import onlineshop from "@/public/projectImg/onlineshop.png";
 import { SiTypescript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -43,9 +44,9 @@ export interface IProject {
 export const ProjectsList: IProject[] = [
   {
     projectId: 1,
-    projectImg: img6,
+    projectImg: onlineshop,
     projectTitle: "ecommerce",
-    projectDescription: "Created Portfolio using Nextjs,Reactjs,tailwindCSS",
+    projectDescription: "Created ecommerce using Nextjs,Reactjs,tailwindCSS",
     projectLink: "onlinestore24.vercel.app",
     projectGithub: "/ecommerce",
     projectBorderColor: "dark:hover:border-blue-500",
