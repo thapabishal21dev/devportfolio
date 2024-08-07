@@ -387,7 +387,7 @@ export const HomepageData: IHomePageData = {
   fullName: "BISHAL THAPA",
   position: "React Developer ",
   location: "Kathmandu, Nepal",
-  personalSummary: `A front-end developer with 1 year of Experience, I specialize in creating visually engaging and user-friendly
+  personalSummary: ` Front-end developer with 1 and half year of Experience, I specialize in creating visually engaging and user-friendly
 interfaces, seamlessly integrating UI elements and ensuring responsive design and API integration. My expertise
 includes optimizing performance, ensuring cross-browser compatibility, and implementing accessibility features. I’m
 committed to staying updated on evolving frameworks and technologies and thrive in collaborative, innovative

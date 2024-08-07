@@ -43,7 +43,7 @@ export default function RootLayout({
   const [blogId, setBlogId] = useState<string | undefined>();
   return (
     <html lang="en" className="dark scroll-smooth ">
-      <body className=" dark:bg-slate-950 ">
+      <body className=" dark:bg-[#0c121e] ">
         <div className="">
           <Provider store={store}>
             <ApiDataContext.Provider

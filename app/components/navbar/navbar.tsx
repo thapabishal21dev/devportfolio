@@ -64,7 +64,7 @@ const Navbar = () => {
           className={` ${
             ismblNavIcon
               ? "mobile-nav mt-0 mx-0 flex flex-col px-3 py-2 border-2 border-slate-200 dark:border-gray-700 hover:border-slate-300 backdrop-blur-[6px] dark:backdrop-blur-[6px] transition-all duration-500 ease-out delay-0 dark:bg-opacity-70 overflow-hidden"
-              : "mt-4 mx-2 flex flex-col px-3 py-2  dark:bg-slate-950  transition-all duration-500 ease-out delay-0 bg-opacity-50 dark:bg-opacity-70 border-2 border-slate-200 dark:border-gray-700 rounded-xl overflow-hidden  "
+              : "mt-4 mx-2 flex flex-col px-3 py-2  dark:bg-[#0c121e]  transition-all duration-500 ease-out delay-0 bg-opacity-50 dark:bg-opacity-70 border-2 border-slate-200 dark:border-gray-700 rounded-xl overflow-hidden  "
           }`}
         >
           <div className=" flex justify-between items-center  ">
@@ -122,7 +122,7 @@ const Navbar = () => {
       </div>
       <div className=" sm:hidden md:hidden ">
         <div id="navbar" className="flex justify-center  ">
-          <nav className=" dark:hover:drop-shadow-[0_0_8px_#4a5871] hover:drop-shadow-[0_0_8px_#c7dbfc] cursor-pointer bg-[#e3edfe] border-2 border-slate-200 dark:border-gray-700 hover:border-slate-300  mt-4 z-50 w-[780px] md:w-fit rounded-xl  dark:bg-slate-950 backdrop-blur-[6px] transition-all duration-500 ease-out delay-0 bg-opacity-50 ">
+          <nav className=" dark:hover:drop-shadow-[0_0_8px_#4a5871] hover:drop-shadow-[0_0_8px_#c7dbfc] cursor-pointer bg-[#e3edfe] border-2 border-slate-200 dark:border-gray-700 hover:border-slate-300  mt-4 z-50 w-[780px] md:w-fit rounded-xl  dark:bg-[#0c121e] backdrop-blur-[6px] transition-all duration-500 ease-out delay-0 bg-opacity-50 ">
             <ul className=" p-1 text-base  md:bg-cyan-500 flex-row gap-8  flex font-medium items-center px-12 py-[6px]">
               <Link href="/">
                 <li className=" dark:hover:text-gray-200  px-2 py-1.5  dark:hover:bg-gray-800 rounded-md transition hover:bg-[#cfd9eb] ease-in-out duration-200 dark:text-slate-400 text-slate-800 ">
