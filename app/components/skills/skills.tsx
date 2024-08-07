@@ -15,7 +15,7 @@ import Techstack from "@/app/techstack";
 
 const Skills = () => {
   return (
-    <div>
+    <>
       <div>
         <h1 className=" animate-slidein [--slidein-delay:1000ms] opacity-0 text-2xl dark:bg-gradient-to-r dark:from-cyan-500 dark:to-green-500 bg-gradient-to-r from-cyan-700 to-green-700 inline-block text-transparent  bg-clip-text font-bold">
           Skills
@@ -93,7 +93,7 @@ const Skills = () => {
           slideClass="animate-slidein [--slidein-delay:2100ms] opacity-0"
         />
       </div>
-    </div>
+    </>
   );
 };
 

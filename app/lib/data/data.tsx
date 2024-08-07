@@ -380,30 +380,28 @@ interface IAboutPageData {
   personalDetails01: string;
   personalDetails02: string;
   personalDetails03: string;
+  personalDetails04: string;
 }
 
 export const HomepageData: IHomePageData = {
   fullName: "BISHAL THAPA",
   position: "React Developer ",
   location: "Kathmandu, Nepal",
-  personalSummary:
-    "Motivated Junior React Developer with knowledge in JavaScript (ES6), ReactJS , NextJs and many others Frontend Techstack. Dedicated to delivering high-quality, responsive user interfaces and enhancing functionality through API integration. A collaborative team player with a passion for innovative projects and a commitment to continuous skill enhancement in software development.",
+  personalSummary: `A front-end developer with 1 year of Experience, I specialize in creating visually engaging and user-friendly
+interfaces, seamlessly integrating UI elements and ensuring responsive design and API integration. My expertise
+includes optimizing performance, ensuring cross-browser compatibility, and implementing accessibility features. I’m
+committed to staying updated on evolving frameworks and technologies and thrive in collaborative, innovative
+projects, always embracing new challenges in software development`,
 };
 export const AboutPageData: IAboutPageData = {
-  fullName: " Hey I am Bishal Thapa",
+  fullName: " Hey there! I'm Bishal Thapa",
   position: "Frontend Developer ",
   location: "from Kathmandu,Nepal",
-  personalDetails01: `A passionate Junior React Developer with a solid foundation in
-    building dynamic and responsive web applications. Over the past 1
-    years , I've honed my skills through immersive internships and
-    freelancing projects, where I've had the opportunity to
-    contribute to the development of engaging and user-friendly
-    websites.`,
-  personalDetails02:
-    "In my internship experience, I gained hands-on experience in React.js, building efficient components that enhance the overall user experience. Through freelancing, I've further solidified my abilities in creating intuitive user interfaces and ensuring seamless interactions.",
+  personalDetails01: `
+I am a passionate Software developer with specializing in frontend technologies. Currently, I am working as freelancher where I contribute my skills and knowledge to drive innovative software solutions.`,
+  personalDetails02: `
+    Throughout my  career, I have garnered  experience in various aspects of web and application development. On the frontend, I excel in crafting intuitive user interfaces using modern technologies, library & framework such as JavaScript , React, Nextjs , Typescript , git  and have a solid understanding of frontend development principles and best practices.`,
 
-  personalDetails03: ` As I embark on the next step of my journey, I'm excited about
-   the prospect of joining a forward-thinking organization where I can
-   continue to learn and contribute to impactful projects. Let's
-   build something amazing together!`,
+  personalDetails03: ``,
+  personalDetails04: `On a personal level, I'm passionate about self-improvement and personal growth. I believe that we can always learn and grow, both professionally and personally.`,
 };

@@ -36,13 +36,13 @@ const Footer = () => {
 
   return (
     <>
-      <div className=" bg-centre bg-[url('/wallpaper.png')]">
+      <div className=" bg-centre bg-[url('/wallpaper.png')]  bg-red-500 ">
         <div className="dark:bg-slate-950  flex justify-center text-neutral-200 dark:text-neutral-300">
-          <div className=" w-[780px] md:w-[650px] sm:w-full px-4  ">
+          <div className="w-[780px] md:w-[650px] sm:w-full px-4 border-t-[1px] border-t-slate-500">
             <div className=" flex flex-row sm:flex-col justify-between ">
               <div className=" flex flex-row gap-40 md:gap-14 sm:gap-0 sm:justify-between mx-20 ">
                 <div>
-                  <h1 className=" dark:text-neutral-400  text-center font-bold text-sm my-5">
+                  <h1 className=" dark:text-gray-400  text-center font-bold text-sm my-5">
                     PAGES
                   </h1>
                   <ul className="flex flex-col text-[1rem] gap-4 items-center ">
@@ -81,7 +81,7 @@ const Footer = () => {
                   </ul>
                 </div>
                 <div>
-                  <h1 className=" dark:text-neutral-400 text-center font-bold text-sm my-5">
+                  <h1 className=" dark:text-gray-400 text-center font-bold text-sm my-5">
                     SOCIAL
                   </h1>
                   <ul className="flex flex-col gap-4 items-center dark:text-white ">
@@ -135,7 +135,7 @@ const Footer = () => {
               </div>
               <div className="  flex justify-center">
                 <div className=" sm:text-center">
-                  <h1 className=" dark:text-neutral-400 font-bold text-sm my-5">
+                  <h1 className=" dark:text-gray-400 font-bold text-sm my-5">
                     THOUGHT OF THE DAY
                   </h1>
                   <div className="  w-[300px] md:w-fit text-sm text-blue-200 italic pb-2 ">
@@ -195,7 +195,7 @@ const Footer = () => {
                 <div>
                   <h1 className=" dark:text-slate-500 text-sm font-bold font-mono text-center">
                     Made by{" "}
-                    <span className="font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-yellow-500 to-green-400 dark:bg-gradient-to-r dark:from-pink-600 dark:to-purple-600">
+                    <span className="font-bold text-transparent text-md bg-clip-text bg-gradient-to-r from-yellow-500 to-green-400 dark:bg-gradient-to-r dark:from-pink-600 dark:to-purple-600">
                       {" "}
                       BISHAL THAPA
                       <i className="devicon-flutter-plain colored"></i>

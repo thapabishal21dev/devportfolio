@@ -19,7 +19,7 @@ import {
 
 import { RiReactjsFill } from "react-icons/ri";
 import { AboutPageData } from "../lib/data/data";
-import BlogListUl from "../components/blog/bloglistUl";
+import ExperienceCard from "../components/experiencecard/experiencecard";
 
 const AboutPage = () => {
   return (
@@ -27,18 +27,21 @@ const AboutPage = () => {
       <div className=" w-[780px] mt-12 md:w-[650px] sm:w-full px-4 ">
         <div className=" flex flex-col">
           <div className="flex flex-col animate-slidein [--slidein-delay:300ms] opacity-0">
-            <p className=" text-2xl ">👋</p>
-            <h1 className="text-3xl bg-gradient-to-r from-[#00c8ff] to-[#00ff80] inline-block text-transparent bg-clip-text font-extrabold">
-              {" "}
+            <p className=" text-2xl">👋</p>
+            <h1 className=" text-4xl bg-gradient-to-r from-[#00c8ff] to-[#00ff80] inline-block text-transparent bg-clip-text font-semibold dark:bg-gradient-to-r dark:from-teal-500 dark:to-blue-500">
               {AboutPageData.fullName}
             </h1>
           </div>
-          <div className=" animate-slidein [--slidein-delay:500ms] opacity-0 flex flex-row items-center gap-2 sm:flex-col sm:items-start sm:w-full">
+          <div className=" animate-slidein [--slidein-delay:500ms] opacity-0 flex flex-row items-center gap-2 sm:flex-col sm:items-start sm:w-full ">
             <div>
-              <p className="  font-bold text-xl"> {AboutPageData.position}</p>
+              <p className=" text-base dark:text-blue-400 text-cyan-600">
+                {AboutPageData.position}
+              </p>
             </div>
             <div className=" flex flex-row ">
-              <p className=" font-bold text-xl"> {AboutPageData.location}</p>
+              <p className="  text-base dark:text-blue-400 text-cyan-600">
+                {AboutPageData.location}
+              </p>
               <Image
                 className="w-6"
                 src="/nepalflag.svg"
@@ -50,7 +53,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className=" text-justify  py-4 flex flex-col gap-4 text-[15px]">
+        <div className=" text-justify  py-4 flex flex-col gap-4 text-base">
           <p className="animate-slidein [--slidein-delay:700ms] opacity-0 ">
             {AboutPageData.personalDetails01}
           </p>
@@ -68,8 +71,9 @@ const AboutPage = () => {
             priority
           />
         </div>
-        <div>
+        <div className=" flex flex-col gap-4 ">
           <p>{AboutPageData.personalDetails03}</p>
+          <p>{AboutPageData.personalDetails04}</p>
         </div>
         <div>
           <h1 className="text-xl py-5 bg-gradient-to-r from-violet-500 to-pink-500 inline-block text-transparent bg-clip-text font-bold">
@@ -183,7 +187,7 @@ const AboutPage = () => {
             techImg={<SiGithub />}
             HoverBorderColor="hover:border-slate-400"
             hoverBgColor="hover:bg-slate-100"
-          />{" "}
+          />
           <Techstack
             techName={"Figma"}
             techImg={<SiFigma />}
@@ -198,48 +202,34 @@ const AboutPage = () => {
           />
         </div>
         <div>
-          <h1 className="text-2xl mt-4 bg-gradient-to-r from-violet-500 to-pink-500 inline-block text-transparent bg-clip-text font-bold">
-            BlogPost
-          </h1>{" "}
-          <BlogListUl />
-        </div>
-        <div className=" py-5">
-          <h1 className="text-2xl py-5 bg-gradient-to-r from-pink-700 to-blue-700 dark:bg-gradient-to-r dark:from-pink-500 dark:to-blue-500 inline-block text-transparent bg-clip-text font-bold">
-            Experience
+          <h1 className=" text-2xl dark:bg-gradient-to-r dark:from-cyan-500 dark:to-green-500 bg-gradient-to-r from-blue-500 to-cyan-500 inline-block dark:text-transparent text-transparent bg-clip-text my-4 font-bold">
+            Work Experience
           </h1>
-          <div className=" flex flex-col font-bold">
-            <div className=" flex flex-row  sm:flex-col gap-10 sm:gap-2 py-10 sm:py-2">
-              <div className=" flex flex-row gap-10 min-w-[300px] sm:w-full ">
-                <h1 className=" text-lg sm:font-normal  text-blue-500 sm:text-white  ">
-                  November 2023 - present
-                </h1>
-              </div>
-              <div className=" flex flex-col gap-1">
-                <h1 className=" text-lg text-violet-500 italic ">
-                  Junior React Developer
-                </h1>
-                <p className=" text-sm text-green-500 ">Freelancher</p>
-                <p className=" text-md ">
-                  working in dashboard and personal projects
-                </p>
-              </div>
-            </div>
-            <div className=" flex flex-row sm:flex-col sm:gap-2 gap-10 py-10">
-              <div className=" flex flex-row gap-10 min-w-[300px]  ">
-                <h1 className=" text-lg sm:font-normal  text-blue-500  ">
-                  June 2023 - September 2023
-                </h1>
-              </div>
-              <div className=" flex flex-col gap-1">
-                <h1 className=" text-lg text-violet-500 italic ">
-                  React Intern
-                </h1>
-                <p className=" text-sm text-green-500 ">LancemeUp</p>
-                <p className=" text-md ">worked in different web application</p>
-              </div>
-            </div>
-          </div>
         </div>
+        <ExperienceCard
+          position="react developer"
+          companyName="milo logic"
+          date=" May 2024 - July 2024"
+          background="hover:bg-blue-100"
+          darkBackground="dark:hover:bg-blue-950"
+          logo="/milologic.jpg"
+        />
+        <ExperienceCard
+          position="react Intern"
+          companyName="lancemeup"
+          date="july 2023 - september 2023"
+          background="hover:bg-sky-100"
+          darkBackground="dark:hover:bg-sky-950"
+          logo="/lancemeup.png"
+        />
+        <ExperienceCard
+          position="react developer"
+          companyName="freelancher"
+          date="november 2023 - present"
+          background="hover:bg-slate-100"
+          darkBackground="dark:hover:bg-slate-900"
+          logo="/freelancher.png"
+        />
       </div>
     </div>
   );

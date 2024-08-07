@@ -2,5 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+body {
+  font-family: "Outfit", sans-serif !important;
+}
 
+.mobile-nav {
+  position: fixed; /* Ensure it's positioned correctly */
+  top: 0; /* Position at the top */
+  left: 0; /* Position at the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(6px); /* Background blur effect */
+  z-index: 50; /* Ensure it's on top of other elements */
+}
 
+#navbar {
+  overflow: hidden !important;
+}

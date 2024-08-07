@@ -12,8 +12,6 @@ interface IThemeType {
   colorScheme: "light" | "dark";
 }
 
-const inter = Inter({ subsets: ["latin"] });
-
 const metadata: Metadata = {
   title: "bishalthapa",
   description: "developed by thapabishal",
@@ -45,7 +43,7 @@ export default function RootLayout({
   const [blogId, setBlogId] = useState<string | undefined>();
   return (
     <html lang="en" className="dark scroll-smooth ">
-      <body className={`${inter.className} dark:bg-slate-950 `}>
+      <body className=" dark:bg-slate-950 ">
         <div className="">
           <Provider store={store}>
             <ApiDataContext.Provider

@@ -50,7 +50,6 @@ const SingleProject = () => {
                   </div>
                 </div>
                 <div className="animate-slidein [--slidein-delay:700ms] opacity-0 flex flex-row  items-center gap-2 my-4">
-                  {" "}
                   <a
                     href={`https://${selectProject.projectLink}`}
                     target="_blank"
