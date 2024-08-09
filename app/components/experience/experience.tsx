@@ -1,5 +1,5 @@
 import React from "react";
-import ExperienceCard from "../experiencecard/experiencecard";
+import WorkExperienceCard from "../workexperience/workExperienceCard";
 
 const Experience = () => {
   return (
@@ -9,7 +9,7 @@ const Experience = () => {
           Work Experience
         </h1>
       </div>
-      <ExperienceCard
+      <WorkExperienceCard
         position="react developer"
         companyName="milo logic"
         date=" May 2024 - July 2024"
@@ -17,7 +17,7 @@ const Experience = () => {
         darkBackground="dark:hover:bg-blue-950"
         logo="/milologic.jpg"
       />
-      <ExperienceCard
+      <WorkExperienceCard
         position="react Intern"
         companyName="lancemeup"
         date="july 2023 - september 2023"
@@ -25,7 +25,7 @@ const Experience = () => {
         darkBackground="dark:hover:bg-sky-950"
         logo="/lancemeup.png"
       />
-      <ExperienceCard
+      <WorkExperienceCard
         position="react developer"
         companyName="freelancher"
         date="november 2023 - present"

@@ -1,5 +1,19 @@
+"use client";
+
+import {
+  MotionStyle,
+  MotionValue,
+  motion,
+  useMotionTemplate,
+  useMotionValue,
+} from "framer-motion";
 import Image from "next/image";
-import React, { useState } from "react";
+import { MouseEvent, useState } from "react";
+
+type WrapperStyle = MotionStyle & {
+  "--x": MotionValue<string>;
+  "--y": MotionValue<string>;
+};
 
 interface IProps {
   companyName?: string;
@@ -10,9 +24,7 @@ interface IProps {
   darkBackground?: string;
 }
 
-// hover:bg-[#e3e6f1]
-
-const ExperienceCard: React.FC<IProps> = ({
+const WorkExperienceCard: React.FC<IProps> = ({
   companyName,
   position,
   date,
@@ -20,14 +32,35 @@ const ExperienceCard: React.FC<IProps> = ({
   background,
   darkBackground,
 }) => {
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const handleMouseMove = ({
+    currentTarget,
+    clientX,
+    clientY,
+  }: MouseEvent<Element>) => {
+    const { left, top } = currentTarget.getBoundingClientRect();
+
+    mouseX.set(clientX - left);
+    mouseY.set(clientY - top);
+  };
+
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <>
+    <motion.div
+      className="animated-cards relative"
+      style={
+        {
+          "--x": useMotionTemplate`${mouseX}px`,
+          "--y": useMotionTemplate`${mouseY}px`,
+        } as WrapperStyle
+      }
+      onMouseMove={handleMouseMove}
+    >
       <div
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        className={` ${background} ${darkBackground} transition  ease-in-out duration-200 my-6 p-4 flex gap-1 rounded-lg cursor-pointer relative`}
+        className={` transition  dark:bg-[#111a28] ease-in-out duration-200 my-6 p-4 flex gap-1 rounded-[8px] cursor-pointer relative hover:bg-gray-100 bg-white`}
       >
         <div className="">
           <Image
@@ -54,8 +87,8 @@ const ExperienceCard: React.FC<IProps> = ({
           </p>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 
-export default ExperienceCard;
+export default WorkExperienceCard;

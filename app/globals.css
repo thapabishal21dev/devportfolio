@@ -4,21 +4,66 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
 body {
   font-family: "Outfit", sans-serif !important;
 }
 
+@layer base {
+  :root {
+    --background: 240, 20%, 3%;
+    --foreground: 0 0% 96%;
+
+    --card: 240, 7%, 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240, 7%, 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 217, 91%, 60%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220, 8%, 14%;
+    --input: 0 0% 14.9%;
+    --ring: 217, 91%, 60%;
+
+    --radius: 0.5rem;
+  }
+}
+
 .mobile-nav {
-  position: fixed; /* Ensure it's positioned correctly */
-  top: 0; /* Position at the top */
-  left: 0; /* Position at the left */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  backdrop-filter: blur(6px); /* Background blur effect */
-  z-index: 50; /* Ensure it's on top of other elements */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  z-index: 50;
 }
 
 #navbar {
   overflow: hidden !important;
+}
+
+.animated-cards::before {
+  @apply pointer-events-none absolute select-none rounded-lg opacity-0 transition-opacity duration-300 hover:opacity-100 z-[-1] content-[''] -inset-px;
+  background: radial-gradient(
+    370px circle at var(--x) var(--y),
+    rgba(146, 149, 255, 0.984) 25%,
+    rgba(242, 0, 0, 0) 50%,
+    transparent 80%
+  );
 }
