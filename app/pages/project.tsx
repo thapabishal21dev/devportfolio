@@ -1,5 +1,4 @@
 import React from "react";
-import ProjectsListsPage from "../components/projects/projectsListsPage";
 
 const ProjectPage = () => {
   return (
@@ -9,7 +8,6 @@ const ProjectPage = () => {
           <h1 className=" animate-slidein [--slidein-delay:300ms] opacity-0 text-[24px] font-bold bg-gradient-to-br to-slate-600 from-slate-900 text-transparent bg-clip-text dark:bg-bg-gradient-to-br dark:to-slate-950 dark:from-slate-100">
             Projects
           </h1>
-          <ProjectsListsPage />
         </div>
         <div className=" text-md hover:cursor-pointer flex items-center mx-auto my-8">
           <a
