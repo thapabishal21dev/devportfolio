@@ -54,7 +54,7 @@ const SingleProjectPage = () => {
                     href={`https://${selectProject.projectLink}`}
                     target="_blank"
                   >
-                    <span className=" flex text-md text-slate-600 gap-1 flex-row items-center truncate hover:text-violet-800 hover:cursor-pointer dark:hover:text-violet-500 dark:text-slate-500">
+                    <span className=" flex text-md text-slate-600 gap-1 flex-row items-center truncate hover:text-slate-200 hover:cursor-pointer dark:hover:text-slate-200 dark:text-slate-500">
                       <RiLinksLine />
                       Live demo
                     </span>
@@ -64,7 +64,7 @@ const SingleProjectPage = () => {
                       href={`https://github.com/thapabishal21dev${selectProject.projectGithub}`}
                       target="_blank"
                     >
-                      <span className=" flex text-md text-slate-600 gap-1 flex-row items-center truncate hover:text-violet-800 hover:cursor-pointer dark:hover:text-violet-500 dark:text-slate-500">
+                      <span className=" flex text-md text-slate-600 gap-1 flex-row items-center truncate hover:text-slate-200 hover:cursor-pointer dark:hover:text-slate-200 dark:text-slate-500">
                         <RiCodeSSlashLine />
                         Source code{" "}
                       </span>
