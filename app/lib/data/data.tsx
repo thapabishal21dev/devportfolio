@@ -158,7 +158,7 @@ export const ProjectsList: IProject[] = [
     projectTitle: "Turnstone-Education",
     projectDescription:
       "Learning Educational website using NextJs,ReactJs,SASS",
-    projectLink: "project-turnstone.vercel.app",
+    projectLink: "/eduturnstone.com/",
     projectGithub: "/project_turnstone",
     projectBorderColor: "dark:hover:border-blue-500",
     projectShadowColor: `dark:hover:drop-shadow-[0_0_12px_#3b82f6]`,
