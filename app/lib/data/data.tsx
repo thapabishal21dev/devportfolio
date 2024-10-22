@@ -1,10 +1,12 @@
-import img1 from "@/public/projectImg/img1.png";
-import img2 from "@/public/projectImg/img2.png";
-import img3 from "@/public/projectImg/img3.png";
-import img4 from "@/public/projectImg/img4.png";
-import img5 from "@/public/projectImg/img5.png";
-import img6 from "@/public/projectImg/img6.png";
-import onlineshop from "@/public/projectImg/onlineshop.png";
+// import img1 from "@/public/projectImages/img1.png";
+import img1 from "@/public/projectImages/img1.png";
+import img2 from "@/public/projectImages/img2.png";
+import img3 from "@/public/projectImages/img3.png";
+import img4 from "@/public/projectImages/img4.png";
+import img5 from "@/public/projectImages/img5.png";
+import img6 from "@/public/projectImages/img6.png";
+import supabase from "@/public/projectImages/supabase.jpg";
+import onlineshop from "@/public/projectImages/onlineshop.png";
 import { SiTypescript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -14,7 +16,7 @@ import { SiReactquery } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 import { SiReacthookform } from "react-icons/si";
 import { SiZod } from "react-icons/si";
-
+import { SiSupabase } from "react-icons/si";
 export interface IprojectTechStack {
   techName?: string;
   techImg?: any;
@@ -25,7 +27,7 @@ export interface IprojectTechStack {
 export interface IProject {
   params?: string;
   projectId?: number;
-  projectImg?: any;
+  projectImages?: any;
   projectTitle?: string;
   projectDescription?: string;
   projectLink?: string;
@@ -44,7 +46,7 @@ export interface IProject {
 export const ProjectsList: IProject[] = [
   {
     projectId: 1,
-    projectImg: onlineshop,
+    projectImages: onlineshop,
     projectTitle: "ecommerce",
     projectDescription: "Created ecommerce using Nextjs,Reactjs,tailwindCSS",
     projectLink: "onlinestore24.vercel.app",
@@ -105,7 +107,7 @@ export const ProjectsList: IProject[] = [
   },
   {
     projectId: 2,
-    projectImg: img6,
+    projectImages: img6,
     projectTitle: "Portfolio",
     projectDescription: "Created Portfolio using Nextjs,Reactjs,tailwindCSS",
     projectLink: "thapabishal.vercel.app",
@@ -154,7 +156,7 @@ export const ProjectsList: IProject[] = [
   },
   {
     projectId: 3,
-    projectImg: img5,
+    projectImages: img5,
     projectTitle: "Turnstone-Education",
     projectDescription:
       "Learning Educational website using NextJs,ReactJs,SASS",
@@ -217,7 +219,7 @@ export const ProjectsList: IProject[] = [
   },
   {
     projectId: 4,
-    projectImg: img4,
+    projectImages: img4,
     projectTitle: "React-Taskapp",
     projectDescription: "crudtask-app",
     projectLink: "thapabishal21dev.github.io/React-task-app",
@@ -248,7 +250,7 @@ export const ProjectsList: IProject[] = [
   },
   {
     projectId: 5,
-    projectImg: img3,
+    projectImages: img3,
     projectTitle: "Crud-App",
     projectDescription: "fullcrud-task-app",
     projectLink: "thapabishal21dev.github.io/CrudApp_task2",
@@ -286,7 +288,7 @@ export const ProjectsList: IProject[] = [
   },
   {
     projectId: 6,
-    projectImg: img1,
+    projectImages: img1,
     projectTitle: "tailwind-Responsive-Site",
     projectDescription: "full resonsive website",
     projectLink: "thapabishal21tech.github.io/tailwind-responsive-design",
@@ -329,7 +331,7 @@ export const ProjectsList: IProject[] = [
   },
   {
     projectId: 7,
-    projectImg: img2,
+    projectImages: img2,
     projectTitle: "Responsive-Site",
     projectDescription: "responsive site",
     projectLink: "thapabishal21dev.github.io/Responsivewebsite",
@@ -364,6 +366,37 @@ export const ProjectsList: IProject[] = [
       },
     ],
   },
+  {
+    projectId: 8,
+    projectImages: supabase,
+    projectTitle: "supabase-authentication",
+    projectDescription: "github & google authentication in supabase",
+    projectLink: "https://supabasepost.vercel.app",
+    projectGithub: "/supabaseproject",
+    projectBorderColor: "dark:hover:border-sky-500",
+    projectShadowColor: `dark:hover:drop-shadow-[0_0_12px_#0ea5e9]`,
+    projectBorderColorLight: "hover:border-sky-500",
+    projectBgColorLight: "hover:bg-sky-100",
+    projectShadowColorLight: `hover:drop-shadow-[0_0_6px_#0ea5e9]`,
+    projectTitleColor1st: "from-sky-400",
+    projectTitleColor2nd: "to-slate-500",
+    projectAnimate: "animate-slidein [--slidein-delay:1500ms] opacity-0",
+
+    projectTechStack: [
+      {
+        techName: "NextJs",
+        techImg: <TbBrandNextjs />,
+        HoverBorderColor: "hover:border-slate-400",
+        hoverBgColor: "hover:bg-slate-200",
+      },
+      {
+        techName: "supabase",
+        techImg: <SiSupabase />,
+        HoverBorderColor: "hover:border-green-400",
+        hoverBgColor: "hover:bg-green-200",
+      },
+    ],
+  },
 ];
 
 interface IHomePageData {
@@ -385,7 +418,7 @@ interface IAboutPageData {
 
 export const HomepageData: IHomePageData = {
   fullName: "BISHAL THAPA",
-  position: "React Developer ",
+  position: "Frontend Developer ",
   location: "Kathmandu, Nepal",
   personalSummary: ` Front-end developer with 1 and half year of Experience, I specialize in creating visually engaging and user-friendly
 interfaces, seamlessly integrating UI elements and ensuring responsive design and API integration. My expertise

@@ -20,7 +20,7 @@ const Experience = () => {
       <WorkExperienceCard
         position="react Intern"
         companyName="lancemeup"
-        date="july 2023 - september 2023"
+        date="june 2023 - september 2023"
         background="hover:bg-sky-100"
         darkBackground="dark:hover:bg-sky-950"
         logo="/lancemeup.png"

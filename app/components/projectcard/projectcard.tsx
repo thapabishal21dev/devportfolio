@@ -1,6 +1,5 @@
 "use client";
 import { ApiDataContext } from "@/app/context/context";
-import { IProject } from "@/app/lib/data/data";
 import {
   MotionStyle,
   MotionValue,
@@ -38,7 +37,7 @@ const ProjectCard = ({ props }: any) => {
   return (
     <Link href={`/projects/${props.projectTitle}`}>
       <motion.div
-        className={`animated-cards relative bg-[#111A28] rounded-lg cursor-pointer`}
+        className={`animated-cards relative dark:bg-[#111A28] bg-[#f0f2f5] rounded-lg cursor-pointer`}
         style={
           {
             "--x": useMotionTemplate`${mouseX}px`,
@@ -49,7 +48,7 @@ const ProjectCard = ({ props }: any) => {
         onClick={handleClick}
       >
         <div
-          className={` p-8 h-32 text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r ${props.projectTitleColor1st} ${props.projectTitleColor2nd} px-4 flex flex-col gap-2 `}
+          className={` p-8 h-32 text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r ${props.projectTitleColor1st} ${props.projectTitleColor2nd} px-4 flex flex-col gap-2  `}
         >
           <h1 className=" text-lg font-bold capitalize">
             {props.projectTitle}

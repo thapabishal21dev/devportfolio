@@ -17,7 +17,7 @@ const Introduction = () => {
             <div className=" flex  flex-row sm:flex-col-reverse gap-4 mt-4 justify-between">
               <div className=" flex flex-col">
                 <div>
-                  <h1 className=" animate-slidein [--slidein-delay:300ms] opacity-0 text-5xl bg-gradient-to-r dark:from-slate-300 dark:to-slate-600  inline-block text-transparent bg-clip-text font-bold  from-gray-700 to-slate-400 sm:text-4xl ">
+                  <h1 className=" animate-slidein [--slidein-delay:300ms] opacity-0 text-5xl bg-gradient-to-r dark:from-slate-300 dark:to-slate-600  inline-block text-transparent bg-clip-text font-bold from-gray-700 to-slate-400 sm:text-4xl ">
                     {HomepageData.fullName}
                   </h1>
                 </div>
@@ -51,7 +51,7 @@ const Introduction = () => {
                 </div>
                 <div>
                   <Link
-                    href="Bishal_Thapa_Resume_2024.pdf"
+                    href="/resume/Bishal_Thapa_Resume_2024.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

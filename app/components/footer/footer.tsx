@@ -22,7 +22,7 @@ const Footer = () => {
     const fetchQuotes = async () => {
       try {
         const response = await fetch(
-          "https://api.quotable.io/quotes/random?limit=1"
+          "http://api.quotable.io/quotes/random?limit=1"
         );
         const data = await response.json();
         setQuotes(data);
@@ -37,7 +37,7 @@ const Footer = () => {
   return (
     <>
       <div className="dark:bg-[#0c121e] flex justify-center text-neutral-700 dark:text-neutral-300">
-        <div className="w-[780px] md:w-[650px] sm:w-full px-4 border-t-[1px] border-t-slate-500">
+        <div className="w-[780px] md:w-[650px] sm:w-full px-4 border-t-[1px] border-t-slate-700">
           <div className=" flex flex-row sm:flex-col justify-between ">
             <div className=" flex flex-row gap-40 md:gap-14 sm:gap-0 sm:justify-between mx-20 ">
               <div>
@@ -47,7 +47,7 @@ const Footer = () => {
                 <ul className="flex flex-col text-[1rem] gap-4 items-center ">
                   <li>
                     <Link
-                      className=" dark:text-white hover:underline hover:underline-offset-2 dark:hover:text-slate-300"
+                      className=" dark:text-white   dark:hover:text-slate-300"
                       href="/"
                     >
                       Home
@@ -55,7 +55,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      className=" dark:text-white hover:underline hover:underline-offset-2 dark:hover:text-slate-300"
+                      className=" dark:text-white dark:hover:text-slate-300"
                       href="/about"
                     >
                       About
@@ -63,7 +63,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      className=" dark:text-white hover:underline hover:underline-offset-2 dark:hover:text-slate-300"
+                      className=" dark:text-white  dark:hover:text-slate-300"
                       href="/projects"
                     >
                       Projects
@@ -71,7 +71,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      className=" dark:text-white hover:underline hover:underline-offset-2 dark:hover:text-slate-300"
+                      className=" dark:text-white dark:hover:text-slate-300"
                       href="/blog"
                     >
                       Blog
@@ -86,7 +86,7 @@ const Footer = () => {
                 <ul className="flex flex-col gap-4 items-center dark:text-white ">
                   <li>
                     <a
-                      className=" hover:text-slate-300 hover:underline hover:underline-offset-2 flex flex-row items-center gap-2"
+                      className=" hover:text-slate-300  flex flex-row items-center gap-2"
                       href="https://www.linkedin.com/in/thapa-bishal-64340622a/"
                       target="_blank"
                     >
@@ -97,7 +97,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className=" hover:text-slate-300 hover:underline hover:underline-offset-2 flex flex-row items-center gap-2"
+                      className=" hover:text-slate-300 flex flex-row items-center gap-2"
                       href="https://www.github.com/thapabishal21dev/"
                       target="_blank"
                     >
@@ -108,7 +108,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className=" hover:text-slate-300 hover:underline hover:underline-offset-2 flex flex-row items-center gap-2"
+                      className=" hover:text-slate-300   flex flex-row items-center gap-2"
                       href="https://www.x.com/"
                       target="_blank"
                     >
@@ -120,7 +120,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className=" hover:text-slate-300 hover:underline hover:underline-offset-2 flex flex-row items-center gap-2"
+                      className=" hover:text-slate-300  flex flex-row items-center gap-2"
                       href="mailto:thapabishal21dev@gmail.com"
                       target="_blank"
                     >

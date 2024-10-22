@@ -22,7 +22,7 @@ const Projects = () => {
         </div>
         <div className=" text-md hover:cursor-pointer flex items-center mx-auto my-4">
           <Link href="https://github.com/thapabishal21dev">
-            <button className=" flex items-center dark:text-white transition text-sm bg-[#111A28] px-3 py-2 rounded-lg hover:opacity-70">
+            <button className=" flex items-center dark:text-white transition text-sm dark:bg-[#111A28] bg-slate-200 px-3 py-2 rounded-lg hover:opacity-70">
               view more <MdKeyboardArrowRight size={15} />
             </button>
           </Link>

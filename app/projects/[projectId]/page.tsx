@@ -76,11 +76,11 @@ const SingleProjectPage = () => {
                 <div className=" flex justify-center">
                   <div className="animate-slidein [--slidein-delay:900ms] opacity-0 dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-700 bg-gradient-to-r from-slate-200 to-slate-400 rounded px-20 py-16 md:p-12 sm:p-6">
                     <Image
-                      src={selectProject.projectImg ?? "/wallpaper.png"}
+                      src={selectProject.projectImages ?? "/wallpaper.png"}
                       alt={
                         selectProject.projectTitle
                           ? `${selectProject.projectTitle}`
-                          : "projectImg"
+                          : "projectImages"
                       }
                       width={1000}
                       height={1000}

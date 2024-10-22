@@ -200,6 +200,20 @@ const AboutPage = () => {
             HoverBorderColor="hover:border-[#f14e32]"
             hoverBgColor="hover:bg-[#f14e32]"
           />
+          <Techstack
+            techName={"Nodejs"}
+            techImg={<SiGit />}
+            HoverBorderColor="hover:border-[#f14e32]"
+            hoverBgColor="hover:bg-[#f14e32]"
+            slideClass="animate-slidein [--slidein-delay:2100ms] opacity-0"
+          />{" "}
+          <Techstack
+            techName={"mongoDB"}
+            techImg={<SiGit />}
+            HoverBorderColor="hover:border-[#f14e32]"
+            hoverBgColor="hover:bg-[#f14e32]"
+            slideClass="animate-slidein [--slidein-delay:2100ms] opacity-0"
+          />
         </div>
         <div>
           <h1 className=" text-2xl dark:bg-gradient-to-r dark:from-cyan-500 dark:to-green-500 bg-gradient-to-r from-blue-500 to-cyan-500 inline-block dark:text-transparent text-transparent bg-clip-text my-4 font-bold">

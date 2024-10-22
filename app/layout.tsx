@@ -1,6 +1,5 @@
 "use client";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { useState } from "react";
 import { ApiDataContext } from "./context/context";
@@ -27,6 +26,9 @@ const metadata: Metadata = {
     "bishalthapa",
     "thapabishal",
     "devportfolio",
+    "nepaldeveloper",
+    "kathmandu developer",
+    "react portfolio",
   ],
 };
 
