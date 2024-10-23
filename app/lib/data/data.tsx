@@ -371,7 +371,7 @@ export const ProjectsList: IProject[] = [
     projectImages: supabase,
     projectTitle: "supabase-authentication",
     projectDescription: "github & google authentication in supabase",
-    projectLink: "https://supabasepost.vercel.app",
+    projectLink: "supabasepost.vercel.app",
     projectGithub: "/supabaseproject",
     projectBorderColor: "dark:hover:border-sky-500",
     projectShadowColor: `dark:hover:drop-shadow-[0_0_12px_#0ea5e9]`,
