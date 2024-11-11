@@ -25,7 +25,7 @@ const Introduction = () => {
                   <h1 className=" animate-slidein [--slidein-delay:500ms] opacity-0 text-2xl bg-gradient-to-r dark:from-slate-300 dark:to-indigo-300 from-slate-500 to-slate-600  inline-block text-transparent bg-clip-text font-bold text-slate-700 ">
                     {HomepageData.position}
                   </h1>
-                  <div className="animate-slidein [--slidein-delay:500ms] opacity-0 flex flex-row items-center bg-gradient-to-r text-2xl text-transparent bg-clip-text font-bold dark:from-slate-300 dark:to-indigo-500 from-slate-500 to-slate-600">
+                  {/* <div className="animate-slidein [--slidein-delay:500ms] opacity-0 flex flex-row items-center bg-gradient-to-r text-2xl text-transparent bg-clip-text font-bold dark:from-slate-300 dark:to-indigo-500 from-slate-500 to-slate-600">
                     <span> {HomepageData.location}</span>
                     <Image
                       className="rounded-full w-7"
@@ -34,7 +34,7 @@ const Introduction = () => {
                       height={200}
                       alt="avatar"
                     />{" "}
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className=" animate-slidein [--slidein-delay:300ms] opacity-0 flex flex-col items-center gap-4">
@@ -57,9 +57,9 @@ const Introduction = () => {
                   >
                     <div className=" cursor-pointer flex flex-row items-center gap-2 w-fit bg-blue-900 hover:bg-blue-800 text-slate-300 px-2 py-1 text-[12px] rounded-md dark:bg-blue-900  dark:text-slate-300 dark:hover:bg-blue-800">
                       Resume
-                      <span className=" text-[12px]">
+                      {/* <span className=" text-[12px]">
                         <FaExternalLinkSquareAlt />
-                      </span>
+                      </span> */}
                     </div>
                   </Link>
                 </div>

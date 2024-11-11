@@ -33,12 +33,12 @@ const AboutPage = () => {
             </h1>
           </div>
           <div className=" animate-slidein [--slidein-delay:500ms] opacity-0 flex flex-row items-center gap-2 sm:flex-col sm:items-start sm:w-full ">
-            <div>
+            {/* <div>
               <p className=" text-base dark:text-blue-400 text-cyan-600">
                 {AboutPageData.position}
               </p>
-            </div>
-            <div className=" flex flex-row ">
+            </div> */}
+            {/* <div className=" flex flex-row ">
               <p className="  text-base dark:text-blue-400 text-cyan-600">
                 {AboutPageData.location}
               </p>
@@ -50,7 +50,7 @@ const AboutPage = () => {
                 priority
                 alt="&nbsp;"
               />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className=" text-justify  py-4 flex flex-col gap-4 text-base">
