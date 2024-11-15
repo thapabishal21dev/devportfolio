@@ -221,7 +221,7 @@ const AboutPage = () => {
           </h1>
         </div>
         <WorkExperienceCard
-          position="react developer"
+          position="Frontend developer"
           companyName="yetitech solutions"
           date="november 2023 - present"
           background="hover:bg-slate-100"
@@ -229,7 +229,7 @@ const AboutPage = () => {
           logo="/yetitechsolutions.png"
         />
         <WorkExperienceCard
-          position="react developer"
+          position="Frontend developer"
           companyName="milo logic"
           date=" May 2024 - July 2024"
           background="hover:bg-blue-100"
@@ -237,7 +237,7 @@ const AboutPage = () => {
           logo="/milologic.jpg"
         />
         <WorkExperienceCard
-          position="react Intern"
+          position="Frontend Intern"
           companyName="lancemeup"
           date="june 2023 - september 2023"
           background="hover:bg-sky-100"
