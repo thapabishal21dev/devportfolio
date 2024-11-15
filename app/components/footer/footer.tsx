@@ -22,7 +22,7 @@ const Footer = () => {
     const fetchQuotes = async () => {
       try {
         const response = await fetch(
-          "http://api.quotable.io/quotes/random?limit=1"
+          "http://api.quotable.io/quotes/random?limit=1",
         );
         const data = await response.json();
         setQuotes(data);
@@ -36,18 +36,18 @@ const Footer = () => {
 
   return (
     <>
-      <div className="dark:bg-[#0c121e] flex justify-center text-neutral-700 dark:text-neutral-300">
-        <div className="w-[780px] md:w-[650px] sm:w-full px-4 border-t-[1px] border-t-slate-700">
-          <div className=" flex flex-row sm:flex-col justify-between ">
-            <div className=" flex flex-row gap-40 md:gap-14 sm:gap-0 sm:justify-between mx-20 ">
+      <div className="flex justify-center text-neutral-700 dark:bg-[#0b0d11] dark:text-neutral-300">
+        <div className="w-[780px] border-t-[1px] border-t-slate-700 px-4 sm:w-full md:w-[650px]">
+          <div className="flex flex-row justify-between sm:flex-col">
+            <div className="mx-20 flex flex-row gap-40 sm:justify-between sm:gap-0 md:gap-14">
               <div>
-                <h1 className=" dark:text-gray-400  text-center font-bold text-sm my-5">
+                <h1 className="my-5 text-center text-sm font-bold dark:text-gray-400">
                   PAGES
                 </h1>
-                <ul className="flex flex-col text-[1rem] gap-4 items-center ">
+                <ul className="flex flex-col items-center gap-4 text-[1rem]">
                   <li>
                     <Link
-                      className=" dark:text-white   dark:hover:text-slate-300"
+                      className="dark:text-white dark:hover:text-slate-300"
                       href="/"
                     >
                       Home
@@ -55,7 +55,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      className=" dark:text-white dark:hover:text-slate-300"
+                      className="dark:text-white dark:hover:text-slate-300"
                       href="/about"
                     >
                       About
@@ -63,7 +63,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      className=" dark:text-white  dark:hover:text-slate-300"
+                      className="dark:text-white dark:hover:text-slate-300"
                       href="/projects"
                     >
                       Projects
@@ -71,7 +71,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      className=" dark:text-white dark:hover:text-slate-300"
+                      className="dark:text-white dark:hover:text-slate-300"
                       href="/blog"
                     >
                       Blog
@@ -80,13 +80,13 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h1 className=" dark:text-gray-400 text-center font-bold text-sm my-5">
+                <h1 className="my-5 text-center text-sm font-bold dark:text-gray-400">
                   SOCIAL
                 </h1>
-                <ul className="flex flex-col gap-4 items-center dark:text-white ">
+                <ul className="flex flex-col items-center gap-4 dark:text-white">
                   <li>
                     <a
-                      className=" hover:text-slate-300  flex flex-row items-center gap-2"
+                      className="flex flex-row items-center gap-2 hover:text-slate-300"
                       href="https://www.linkedin.com/in/thapa-bishal-64340622a/"
                       target="_blank"
                     >
@@ -97,7 +97,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className=" hover:text-slate-300 flex flex-row items-center gap-2"
+                      className="flex flex-row items-center gap-2 hover:text-slate-300"
                       href="https://www.github.com/thapabishal21dev/"
                       target="_blank"
                     >
@@ -108,7 +108,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className=" hover:text-slate-300   flex flex-row items-center gap-2"
+                      className="flex flex-row items-center gap-2 hover:text-slate-300"
                       href="https://www.x.com/"
                       target="_blank"
                     >
@@ -120,7 +120,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className=" hover:text-slate-300  flex flex-row items-center gap-2"
+                      className="flex flex-row items-center gap-2 hover:text-slate-300"
                       href="mailto:thapabishal21dev@gmail.com"
                       target="_blank"
                     >
@@ -132,16 +132,16 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="  flex justify-center">
-              <div className=" sm:text-center">
-                <h1 className=" dark:text-gray-400 font-bold text-sm my-5">
+            <div className="flex justify-center">
+              <div className="sm:text-center">
+                <h1 className="my-5 text-sm font-bold dark:text-gray-400">
                   THOUGHT OF THE DAY
                 </h1>
-                <div className="  w-[300px] md:w-fit text-sm text-blue-700 dark:text-blue-200 italic pb-2 ">
+                <div className="w-[300px] pb-2 text-sm italic text-blue-700 dark:text-blue-200 md:w-fit">
                   {quotes.length ? (
                     <div>
                       {quotes.map((quote) => (
-                        <div key={quote._id} className=" gap-2 flex flex-col">
+                        <div key={quote._id} className="flex flex-col gap-2">
                           <p>{`❛❛ ${quote.content} ❜❜`}</p>
                           <p className="text-yellow-500">-{quote.author}</p>
                         </div>
@@ -156,14 +156,14 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className=" flex flex-col justify-center items-center border-t mt-10 border-slate-400 dark:border-slate-700">
-            <div className=" flex flex-col justify-center items-center my-4 ">
-              <div className=" flex items-center justify-center gap-4">
-                <span className="  font-bold text-sm font-mono dark:text-slate-500">
+          <div className="mt-10 flex flex-col items-center justify-center border-t border-slate-400 dark:border-slate-700">
+            <div className="my-4 flex flex-col items-center justify-center">
+              <div className="flex items-center justify-center gap-4">
+                <span className="font-mono text-sm font-bold dark:text-slate-500">
                   MADE WITH
                 </span>
                 <div className="">
-                  <ul className=" flex flex-row items-center gap-2">
+                  <ul className="flex flex-row items-center gap-2">
                     <li>
                       <Image
                         width={30}
@@ -192,9 +192,9 @@ const Footer = () => {
                 </div>
               </div>
               <div>
-                <h1 className=" dark:text-slate-500 text-sm font-bold font-mono text-center">
+                <h1 className="font-mono text-center text-sm font-bold dark:text-slate-500">
                   Made by{" "}
-                  <span className="font-bold text-transparent text-md bg-clip-text bg-gradient-to-r from-yellow-500 to-green-400 dark:bg-gradient-to-r dark:from-pink-600 dark:to-purple-600">
+                  <span className="text-md bg-gradient-to-r font-bold text-sky-500 dark:text-sky-600">
                     {" "}
                     BISHAL THAPA
                     <i className="devicon-flutter-plain colored"></i>

@@ -26,32 +26,30 @@ const Github = () => {
   };
 
   return (
-    <div className=" flex justify-center dark:text-neutral-300 text-neutral-700 ">
-      <div className=" w-[780px] md:w-[650px] sm:w-full px-4 ">
-        <h1 className=" text-center font-bold text-2xl ">
-          Github Contributions
-        </h1>{" "}
-        <div className=" mx-16 flex justify-center my-6 flex-row gap-4 ">
+    <div className="flex animate-slidein justify-center text-neutral-700 opacity-0 [--slidein-delay:2500ms] dark:text-neutral-300">
+      <div className="w-[780px] px-4 sm:w-full md:w-[650px]">
+        <h1 className="text-center text-2xl font-bold">Github Contributions</h1>{" "}
+        <div className="mx-16 my-6 flex flex-row justify-center gap-4">
           <button
             onClick={() => handleChangeYear(2022)}
-            className=" hover:text-green-500 focus:outline-none focus:border-b-2 focus:border-green-300"
+            className="hover:text-green-500 focus:border-b-2 focus:border-green-300 focus:outline-none"
           >
             2022
           </button>
           <button
             onClick={() => handleChangeYear(2023)}
-            className=" hover:text-green-500 focus:outline-none focus:border-b-2 focus:border-green-300"
+            className="hover:text-green-500 focus:border-b-2 focus:border-green-300 focus:outline-none"
           >
             2023
           </button>
           <button
             onClick={() => handleChangeYear(2024)}
-            className=" hover:text-green-500 focus:outline-none focus:border-b-2 focus:border-green-300"
+            className="hover:text-green-500 focus:border-b-2 focus:border-green-300 focus:outline-none"
           >
             2024
           </button>
         </div>
-        <div className=" border-slate-400 py-4 px-5 rounded-md border-2 mx-2 ">
+        <div className="mx-2 rounded-md border-2 border-slate-400 px-5 py-4">
           {isClient ? (
             <GitHubCalendar
               style={{ margin: "6px auto" }}
@@ -69,7 +67,7 @@ const Github = () => {
             </div>
           )}
         </div>
-        <h1 className="my-6 text-md italic  underline cursor-pointer text-center text-green-500">
+        <h1 className="text-md my-6 cursor-pointer text-center italic text-green-500 underline">
           <Link
             href="https://github.com/thapabishal21dev"
             title="visit"

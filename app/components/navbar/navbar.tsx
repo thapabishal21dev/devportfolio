@@ -74,48 +74,48 @@ const Navbar = () => {
   }, [ismblNavIcon]);
   return (
     <>
-      <div id="navbar" className="z-50 dark:text-white w-full lg:hidden  ">
+      <div id="navbar" className="z-50 w-full dark:text-white lg:hidden">
         <div
           className={` ${
             ismblNavIcon
-              ? "mobile-nav mt-0 mx-0 flex flex-col px-3 py-2 border-2 border-slate-200 dark:border-gray-700 hover:border-slate-300 backdrop-blur-[6px] dark:backdrop-blur-[6px] transition-all duration-500 ease-out delay-0 dark:bg-opacity-70 "
-              : "mt-4 mx-2 flex flex-col px-3 py-2  dark:bg-[#0c121e]  transition-all duration-500 ease-out delay-0 bg-opacity-50 dark:bg-opacity-70 border-2 border-slate-200 dark:border-gray-700 rounded-xl "
+              ? "mobile-nav mx-0 mt-0 flex flex-col border-2 border-slate-200 px-3 py-2 backdrop-blur-[6px] transition-all delay-0 duration-500 ease-out hover:border-slate-300 dark:border-gray-700 dark:bg-opacity-70 dark:backdrop-blur-[6px]"
+              : "mx-2 mt-4 flex flex-col rounded-xl border-2 border-slate-200 bg-opacity-50 px-3 py-2 transition-all delay-0 duration-500 ease-out dark:border-gray-700 dark:bg-[#0b0d11] dark:bg-opacity-70"
           }`}
         >
-          <div className=" flex justify-between items-center  ">
+          <div className="flex items-center justify-between">
             <Link href="/">
-              <div className=" flex p-2 flex-row gap-1 items-center  px-3 py-2 hover:rounded-lg hover:cursor-pointer hover:bg-slate-400 transition rounded-lg delay-25 ease-in-out">
+              <div className="delay-25 flex flex-row items-center gap-1 rounded-lg p-2 px-3 py-2 transition ease-in-out hover:cursor-pointer hover:rounded-lg hover:bg-slate-400">
                 <MdOutlineRocketLaunch className="" size={28} />
               </div>
             </Link>
-            <div className=" flex gap-4 items-center">
+            <div className="flex items-center gap-4">
               <div className="">
                 <button
-                  className=" bg-slate-200 md:ml-0 md:mx-4 w-30  rounded-lg px-3 py-2 hover:bg-gray-00 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-gray-800 transition duration-200 ease-in-out dark:focus:ring-slate-700 focus:ring-slate-300 focus:ring-[2px] focus:outline-none  "
+                  className="w-30 hover:bg-gray-00 rounded-lg bg-slate-200 px-3 py-2 transition duration-200 ease-in-out hover:bg-slate-300 focus:outline-none focus:ring-[2px] focus:ring-slate-300 dark:bg-slate-800 dark:hover:bg-gray-800 dark:focus:ring-slate-700 md:mx-4 md:ml-0"
                   onClick={toggleThemeIcon}
                 >
                   {isClickedThemeIcon ? (
-                    <div className="text-white gap-2 items-center flex flex-row text-[18px]">
+                    <div className="flex flex-row items-center gap-2 text-[18px] text-white">
                       <FiSun />
                     </div>
                   ) : (
-                    <div className="text-black text-[14px] gap-2 items-center flex flex-row  ">
+                    <div className="flex flex-row items-center gap-2 text-[14px] text-black">
                       <FiMoon />
                     </div>
                   )}
                 </button>
               </div>
-              <div className="cursor-pointer ">
+              <div className="cursor-pointer">
                 {ismblNavIcon ? (
                   <div
-                    className="text-3xl transition duration-900 ease-in-out cursor-pointer"
+                    className="duration-900 cursor-pointer text-3xl transition ease-in-out"
                     onClick={handleClickNav}
                   >
                     <RxCross2 />
                   </div>
                 ) : (
                   <div
-                    className="text-3xl transition duration-900 ease-in-out cursor-pointer"
+                    className="duration-900 cursor-pointer text-3xl transition ease-in-out"
                     onClick={handleClickNav}
                   >
                     <HiOutlineBars3 size={34} />
@@ -124,7 +124,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className=" flex justify-center">
+          <div className="flex justify-center">
             {ismblNavIcon ? (
               <div className="overflow-y-hidden">
                 <MobileNav setIsmblNavIcon={setIsmblNavIcon} />
@@ -135,19 +135,19 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className=" sm:hidden md:hidden">
-        <div id="navbar" className="flex justify-center  ">
-          <nav className=" dark:hover:drop-shadow-[0_0_6px_#4a5871] hover:drop-shadow-[0_0_8px_#c7dbfc] cursor-pointer bg-[#e3edfe] border-2 border-slate-200 dark:border-gray-700 hover:border-slate-300  mt-4 z-50 w-[780px] md:w-fit rounded-xl  dark:bg-[#0c121e] backdrop-blur-[6px] transition-all duration-500 ease-out delay-0 bg-opacity-50 my-2 ">
-            <ul className=" p-1 text-base  md:bg-cyan-500 flex-row gap-8  flex font-medium items-center px-12 py-[6px]">
+      <div className="sm:hidden md:hidden">
+        <div id="navbar" className="flex justify-center">
+          <nav className="z-50 my-2 mt-4 w-[780px] cursor-pointer rounded-xl border-2 border-slate-200 bg-[#e3edfe] bg-opacity-50 backdrop-blur-[6px] transition-all delay-0 duration-500 ease-out hover:border-slate-300 hover:drop-shadow-[0_0_8px_#c7dbfc] dark:border-gray-700 dark:bg-[#0b0d11] dark:hover:drop-shadow-[0_0_6px_#4a5871] md:w-fit">
+            <ul className="flex flex-row items-center gap-8 p-1 px-12 py-[6px] text-base font-medium md:bg-cyan-500">
               <Link href="/">
-                <li className=" dark:hover:text-gray-200  px-2 py-1.5  dark:hover:bg-gray-800 rounded-md transition hover:bg-[#cfd9eb] ease-in-out duration-200 dark:text-slate-400 text-slate-800 ">
+                <li className="rounded-md px-2 py-1.5 text-slate-800 transition duration-200 ease-in-out hover:bg-[#cfd9eb] dark:text-slate-400 dark:hover:bg-gray-800 dark:hover:text-gray-200">
                   Home
                 </li>
               </Link>
               <Link href="/about">
                 <li
-                  className={`dark:hover:text-gray-200 px-2 py-1.5 dark:hover:bg-gray-800 rounded-md transition  ease-in-out duration-200 dark:text-slate-400 hover:bg-[#cfd9eb] text-slate-800 ${getLinkStyle(
-                    "/about"
+                  className={`rounded-md px-2 py-1.5 text-slate-800 transition duration-200 ease-in-out hover:bg-[#cfd9eb] dark:text-slate-400 dark:hover:bg-gray-800 dark:hover:text-gray-200 ${getLinkStyle(
+                    "/about",
                   )}`}
                 >
                   About
@@ -155,8 +155,8 @@ const Navbar = () => {
               </Link>
               <Link href="/projects">
                 <li
-                  className={`dark:hover:text-gray-200 px-2 py-1.5 dark:hover:bg-gray-800 rounded-md transition  ease-in-out duration-200 dark:text-slate-400 hover:bg-[#cfd9eb] text-slate-800 ${getLinkStyle(
-                    "/projects"
+                  className={`rounded-md px-2 py-1.5 text-slate-800 transition duration-200 ease-in-out hover:bg-[#cfd9eb] dark:text-slate-400 dark:hover:bg-gray-800 dark:hover:text-gray-200 ${getLinkStyle(
+                    "/projects",
                   )}`}
                 >
                   Projects
@@ -164,8 +164,8 @@ const Navbar = () => {
               </Link>
               <Link href="/technology">
                 <li
-                  className={`dark:hover:text-gray-200 px-2 py-1.5 dark:hover:bg-gray-800 rounded-md transition  ease-in-out duration-200 dark:text-slate-400 hover:bg-[#cfd9eb] text-slate-800 ${getLinkStyle(
-                    "/technology"
+                  className={`rounded-md px-2 py-1.5 text-slate-800 transition duration-200 ease-in-out hover:bg-[#cfd9eb] dark:text-slate-400 dark:hover:bg-gray-800 dark:hover:text-gray-200 ${getLinkStyle(
+                    "/technology",
                   )}`}
                 >
                   Technology
@@ -173,26 +173,26 @@ const Navbar = () => {
               </Link>
               <Link href="/blog">
                 <li
-                  className={`dark:hover:text-gray-200 px-2 py-1.5 dark:hover:bg-gray-800 rounded-md transition  ease-in-out duration-200 dark:text-slate-400 hover:bg-[#cfd9eb] text-slate-800 ${getLinkStyle(
-                    "/blog"
+                  className={`rounded-md px-2 py-1.5 text-slate-800 transition duration-200 ease-in-out hover:bg-[#cfd9eb] dark:text-slate-400 dark:hover:bg-gray-800 dark:hover:text-gray-200 ${getLinkStyle(
+                    "/blog",
                   )}`}
                 >
                   Blog
                 </li>
               </Link>
               <button
-                className=" bg-slate-200 md:ml-0 md:mx-4 w-30  rounded-lg px-[10px] py-[4px] hover:bg-gray-00 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-gray-900 transition duration-200 ease-in-out dark:focus:ring-slate-700 focus:ring-slate-300 focus:ring-[2px] focus:outline-none "
+                className="w-30 hover:bg-gray-00 rounded-lg bg-slate-200 px-[10px] py-[4px] transition duration-200 ease-in-out hover:bg-slate-300 focus:outline-none focus:ring-[2px] focus:ring-slate-300 dark:bg-slate-800 dark:hover:bg-gray-900 dark:focus:ring-slate-700 md:mx-4 md:ml-0"
                 onClick={toggleThemeIcon}
               >
                 {isClickedThemeIcon ? (
-                  <div className="text-white gap-2 items-center flex flex-row text-[18px]">
+                  <div className="flex flex-row items-center gap-2 text-[18px] text-white">
                     <FiSun />
-                    <span className=" text-[14px] text-white gap-4 items-center flex flex-row ">
+                    <span className="flex flex-row items-center gap-4 text-[14px] text-white">
                       Light Mode
                     </span>
                   </div>
                 ) : (
-                  <div className="text-black text-[14px] gap-2 items-center flex flex-row  ">
+                  <div className="flex flex-row items-center gap-2 text-[14px] text-black">
                     <FiMoon />
                     <span>Dark Mode</span>
                   </div>

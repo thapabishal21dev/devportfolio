@@ -23,16 +23,16 @@ import WorkExperienceCard from "../components/workexperience/workExperienceCard"
 
 const AboutPage = () => {
   return (
-    <div className=" flex justify-center mt-0 dark:text-slate-200 text-slate-700">
-      <div className=" w-[780px] mt-12 md:w-[650px] sm:w-full px-4 ">
-        <div className=" flex flex-col">
-          <div className="flex flex-col animate-slidein [--slidein-delay:300ms] opacity-0">
-            <p className=" text-2xl">👋</p>
-            <h1 className=" text-4xl bg-gradient-to-r from-[#00c8ff] to-[#00ff80] inline-block text-transparent bg-clip-text font-semibold dark:bg-gradient-to-r dark:from-teal-500 dark:to-blue-500">
+    <div className="mt-0 flex justify-center text-slate-700 dark:text-slate-200">
+      <div className="mt-12 w-[780px] px-4 sm:w-full md:w-[650px]">
+        <div className="flex flex-col">
+          <div className="flex animate-slidein flex-col opacity-0 [--slidein-delay:300ms]">
+            <p className="text-2xl">👋</p>
+            <h1 className="inline-block bg-gradient-to-r from-[#00c8ff] to-[#00ff80] bg-clip-text text-4xl font-semibold text-transparent dark:bg-gradient-to-r dark:from-teal-500 dark:to-blue-500">
               {AboutPageData.fullName}
             </h1>
           </div>
-          <div className=" animate-slidein [--slidein-delay:500ms] opacity-0 flex flex-row items-center gap-2 sm:flex-col sm:items-start sm:w-full ">
+          <div className="flex animate-slidein flex-row items-center gap-2 opacity-0 [--slidein-delay:500ms] sm:w-full sm:flex-col sm:items-start">
             {/* <div>
               <p className=" text-base dark:text-blue-400 text-cyan-600">
                 {AboutPageData.position}
@@ -53,17 +53,17 @@ const AboutPage = () => {
             </div> */}
           </div>
         </div>
-        <div className=" text-justify  py-4 flex flex-col gap-4 text-base">
-          <p className="animate-slidein [--slidein-delay:700ms] opacity-0 ">
+        <div className="flex flex-col gap-4 py-4 text-justify text-base">
+          <p className="animate-slidein opacity-0 [--slidein-delay:700ms]">
             {AboutPageData.personalDetails01}
           </p>
-          <p className=" animate-slidein [--slidein-delay:900ms] opacity-0">
+          <p className="animate-slidein opacity-0 [--slidein-delay:900ms]">
             {AboutPageData.personalDetails02}
           </p>
         </div>
         <div>
           <Image
-            className=" animate-slidein [--slidein-delay:1100ms] opacity-0 w-full rounded-lg grayscale my-10 bg-slate-400"
+            className="my-10 w-full animate-slidein rounded-lg bg-slate-400 opacity-0 grayscale [--slidein-delay:1100ms]"
             src={"/photo.jpg"}
             width={700}
             height={700}
@@ -71,17 +71,17 @@ const AboutPage = () => {
             priority
           />
         </div>
-        <div className=" flex flex-col gap-4 ">
+        <div className="flex flex-col gap-4">
           <p>{AboutPageData.personalDetails03}</p>
           <p>{AboutPageData.personalDetails04}</p>
         </div>
         <div>
-          <h1 className="text-xl py-5 bg-gradient-to-r from-violet-500 to-pink-500 inline-block text-transparent bg-clip-text font-bold">
+          <h1 className="inline-block bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text py-5 text-xl font-bold text-transparent">
             lets connect!
           </h1>
           <p>
             Feel free to reach out to me at{" "}
-            <span className=" text-blue-400 hover:underline underline-offset-2">
+            <span className="text-blue-400 underline-offset-2 hover:underline">
               {" "}
               <a href="mailto:thapabishal21sinha@gmail.com">
                 thapabishal21dev@gmail.com{" "}
@@ -91,24 +91,24 @@ const AboutPage = () => {
           </p>
         </div>
         <div>
-          <div className=" flex gap-6 pt-5 flex-row items-center">
+          <div className="flex flex-row items-center gap-6 pt-5">
             <a
               href="https://github.com/thapabishal21dev"
               target="_blank"
-              className="hover:bg-slate-200 p-2 rounded-md dark:hover:bg-slate-800"
+              className="rounded-md p-2 hover:bg-slate-200 dark:hover:bg-slate-800"
             >
               {" "}
-              <p className=" text-[24px] ">
+              <p className="text-[24px]">
                 <FaGithub />
               </p>
             </a>
             <a
               href="https://www.linkedin.com/in/thapa-bishal-64340622a/"
               target="_blank"
-              className="hover:bg-slate-200 p-2 rounded-md dark:hover:bg-slate-800"
+              className="rounded-md p-2 hover:bg-slate-200 dark:hover:bg-slate-800"
             >
               {" "}
-              <p className="  text-[24px] ">
+              <p className="text-[24px]">
                 <FaLinkedin />
               </p>
             </a>
@@ -116,30 +116,30 @@ const AboutPage = () => {
             <a
               href="https://twitter.com/"
               target="_blank"
-              className="hover:bg-slate-200 p-2 rounded-md dark:hover:bg-slate-800"
+              className="rounded-md p-2 hover:bg-slate-200 dark:hover:bg-slate-800"
             >
               {" "}
-              <p className="  text-[24px] ">
+              <p className="text-[24px]">
                 <FaXTwitter />
               </p>
             </a>
             <a
               href="mailto:thapabishal21dev@gmail.com"
-              className="hover:bg-slate-200 p-2 rounded-md dark:hover:bg-slate-800"
+              className="rounded-md p-2 hover:bg-slate-200 dark:hover:bg-slate-800"
             >
               {" "}
-              <p className=" text-[24px] ">
+              <p className="text-[24px]">
                 <MdEmail />
               </p>
             </a>
           </div>
         </div>
         <div>
-          <h1 className="text-2xl mt-4 bg-gradient-to-r from-cyan-500 to-green-500 inline-block text-transparent bg-clip-text font-bold">
+          <h1 className="mt-4 inline-block bg-gradient-to-r from-cyan-500 to-green-500 bg-clip-text text-2xl font-bold text-transparent">
             Skills
           </h1>
         </div>
-        <div className="  flex flex-row flex-wrap gap-4 py-4 ">
+        <div className="flex flex-row flex-wrap gap-4 py-4">
           <Techstack
             techName={"TypeScript"}
             techImg={<SiTypescript />}
@@ -216,10 +216,18 @@ const AboutPage = () => {
           />
         </div>
         <div>
-          <h1 className=" text-2xl dark:bg-gradient-to-r dark:from-cyan-500 dark:to-green-500 bg-gradient-to-r from-blue-500 to-cyan-500 inline-block dark:text-transparent text-transparent bg-clip-text my-4 font-bold">
+          <h1 className="my-4 inline-block bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-2xl font-bold text-transparent dark:bg-gradient-to-r dark:from-cyan-500 dark:to-green-500 dark:text-transparent">
             Work Experience
           </h1>
         </div>
+        <WorkExperienceCard
+          position="react developer"
+          companyName="yetitech solutions"
+          date="november 2023 - present"
+          background="hover:bg-slate-100"
+          darkBackground="dark:hover:bg-slate-900"
+          logo="/yetitechsolutions.png"
+        />
         <WorkExperienceCard
           position="react developer"
           companyName="milo logic"
@@ -231,18 +239,10 @@ const AboutPage = () => {
         <WorkExperienceCard
           position="react Intern"
           companyName="lancemeup"
-          date="july 2023 - september 2023"
+          date="june 2023 - september 2023"
           background="hover:bg-sky-100"
           darkBackground="dark:hover:bg-sky-950"
           logo="/lancemeup.png"
-        />
-        <WorkExperienceCard
-          position="react developer"
-          companyName="freelancher"
-          date="november 2023 - present"
-          background="hover:bg-slate-100"
-          darkBackground="dark:hover:bg-slate-900"
-          logo="/freelancher.png"
         />
       </div>
     </div>

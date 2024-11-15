@@ -17,11 +17,11 @@ const Skills = () => {
   return (
     <>
       <div>
-        <h1 className=" animate-slidein [--slidein-delay:1000ms] opacity-0 text-2xl dark:bg-gradient-to-r dark:from-cyan-500 dark:to-green-500 bg-gradient-to-r from-cyan-700 to-green-700 inline-block text-transparent  bg-clip-text font-bold">
+        <h1 className="inline-block animate-slidein bg-gradient-to-r from-cyan-700 to-green-700 bg-clip-text text-2xl font-bold text-transparent opacity-0 [--slidein-delay:1000ms] dark:bg-gradient-to-r dark:from-cyan-500 dark:to-green-500">
           Skills
         </h1>
       </div>
-      <div className="  flex flex-row flex-wrap gap-4 py-4 ">
+      <div className="flex flex-row flex-wrap gap-4 py-4">
         <Techstack
           techName={"TypeScript"}
           techImg={<SiTypescript />}

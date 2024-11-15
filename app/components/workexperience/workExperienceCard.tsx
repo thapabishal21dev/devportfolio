@@ -60,29 +60,29 @@ const WorkExperienceCard: React.FC<IProps> = ({
       onMouseMove={handleMouseMove}
     >
       <div
-        className={` transition  dark:bg-[#111a28] ease-in-out duration-200 my-6 p-4 flex gap-1 rounded-[8px] cursor-pointer relative hover:bg-gray-100 bg-white`}
+        className={`relative my-6 flex cursor-pointer gap-1 rounded-[8px] bg-white p-4 transition duration-200 ease-in-out hover:bg-gray-100 dark:bg-[#14181F]`}
       >
         <div className="">
           <Image
-            className=" z-50 w-12  border border-1 border-gray-400 rounded-lg mr-2 "
+            className="border-1 z-50 mr-2 w-12 rounded-lg border border-gray-400"
             src={`${logo}`}
             width={100}
             height={100}
             alt="companyimg"
           />
         </div>
-        <div className="flex flex-col capitalize ">
-          <p className=" text-gray-500 text-base font-RobotoMono dark:text-gray-300">
+        <div className="flex flex-col capitalize">
+          <p className="font-RobotoMono text-base text-gray-500 dark:text-gray-300">
             {date}
           </p>
           <h1
             className={`font-semibold ${
               isHovered === true ? "underline decoration-2" : ""
-            }  text-base text-slate-900 dark:text-slate-200`}
+            } text-base text-slate-900 dark:text-slate-200`}
           >
             {companyName}
           </h1>
-          <p className=" text-gray-500 font-RobotoMono dark:text-gray-300">
+          <p className="font-RobotoMono text-gray-500 dark:text-gray-300">
             {position}
           </p>
         </div>

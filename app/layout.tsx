@@ -43,9 +43,11 @@ export default function RootLayout({
   const [userApiData, setUserApiData] = useState<string | undefined>();
 
   const [blogId, setBlogId] = useState<string | undefined>();
+
+  const [selectedProjectId, setSelectedProjectId] = useState();
   return (
-    <html lang="en" className="dark scroll-smooth ">
-      <body className=" dark:bg-[#0c121e] ">
+    <html lang="en" className="dark scroll-smooth">
+      <body className="dark:bg-[#0b0d11]">
         <div className="">
           <Provider store={store}>
             <ApiDataContext.Provider
@@ -56,6 +58,8 @@ export default function RootLayout({
                 setUpdateTheme,
                 setBlogId,
                 blogId,
+                selectedProjectId,
+                setSelectedProjectId,
               }}
             >
               <Navbar />
