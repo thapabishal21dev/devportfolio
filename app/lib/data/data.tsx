@@ -417,24 +417,29 @@ interface IAboutPageData {
 }
 
 export const HomepageData: IHomePageData = {
-  fullName: "BISHAL THAPA",
+  fullName: "Bishal Thapa",
   position: "Frontend Developer ",
   location: "Kathmandu, Nepal",
-  personalSummary: ` Front-end developer with 1 and half year of Experience, I specialize in creating visually engaging and user-friendly
-interfaces, seamlessly integrating UI elements and ensuring responsive design and API integration. My expertise
-includes optimizing performance, ensuring cross-browser compatibility, and implementing accessibility features. I’m
-committed to staying updated on evolving frameworks and technologies and thrive in collaborative, innovative
-projects, always embracing new challenges in software development`,
+  personalSummary: ` Passionate software developer specializing in front-end technologies with 1 and half years of experience
+creating visually engaging and user-friendly interfaces. My expertise includes seamlessly integrating UI
+elements, ensuring responsive design, optimizing performance for a smooth user experience, and
+implementing API integrations. I work proficiently with modern technologies, libraries, and frameworks
+such as JavaScript, React, Next.js, TypeScript, and Redux with a solid understanding of front-end
+development principles and best practices.`,
 };
 export const AboutPageData: IAboutPageData = {
   fullName: " Hey there! I'm Bishal Thapa",
   position: "Frontend Developer ",
   location: "from Kathmandu,Nepal",
-  personalDetails01: `
-I am a passionate Software developer with specializing in frontend technologies. Currently, I am working as freelancher where I contribute my skills and knowledge to drive innovative software solutions.`,
-  personalDetails02: `
-    Throughout my  career, I have garnered  experience in various aspects of web and application development. On the frontend, I excel in crafting intuitive user interfaces using modern technologies, library & framework such as JavaScript , React, Nextjs , Typescript , git  and have a solid understanding of frontend development principles and best practices.`,
+  personalDetails01: `I am a passionate software developer specializing in front-end technologies with one and half years of experience creating visually engaging and user-friendly interfaces. My expertise lies in seamlessly integrating UI elements, ensuring responsive design, optimizing performance for smooth user experiences, and implementing API integrations.
 
-  personalDetails03: ``,
-  personalDetails04: `On a personal level, I'm passionate about self-improvement and personal growth. I believe that we can always learn and grow, both professionally and personally.`,
+`,
+  personalDetails02: `
+   Currently, I am focused on building high-quality, scalable, and accessible web applications, leveraging modern tools and frameworks like JavaScript, React, Next.js, TypeScript, and Redux. I bring a solid understanding of front-end development principles and best practices, ensuring that every project I contribute to meets the best standards of usability and performance.
+`,
+
+  personalDetails03: ` Beyond my technical skills, I am deeply committed to self-improvement and personal growth. I believe in the power of continuous learning and strive to grow both professionally and personally.  
+  `,
+  personalDetails04: `
+`,
 };

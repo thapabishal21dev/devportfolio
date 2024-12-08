@@ -17,7 +17,7 @@ const Introduction = () => {
             <div className="mt-4 flex flex-row justify-between gap-4 sm:flex-col-reverse">
               <div className="flex flex-col">
                 <div>
-                  <h1 className="inline-block animate-slidein bg-gradient-to-r from-gray-700 to-slate-400 bg-clip-text text-5xl font-bold text-transparent opacity-0 [--slidein-delay:300ms] dark:from-slate-300 dark:to-slate-600 sm:text-4xl">
+                  <h1 className="inline-block animate-slidein bg-gradient-to-r from-gray-700 to-slate-400 bg-clip-text text-5xl font-black text-transparent opacity-0 [--slidein-delay:300ms] dark:from-slate-300 dark:to-slate-600 sm:text-4xl">
                     {HomepageData.fullName}
                   </h1>
                 </div>

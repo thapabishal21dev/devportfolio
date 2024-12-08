@@ -1,12 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"); */
 
 body {
-  font-family: "Outfit", sans-serif !important;
+  /* font-family: "Outfit", sans-serif !important; */
+  font-family: "DM Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 @layer base {
@@ -59,7 +64,7 @@ body {
 }
 
 .animated-cards::before {
-  @apply pointer-events-none absolute select-none rounded-lg opacity-0 transition-opacity duration-300 hover:opacity-100 z-[-1] content-[''] -inset-px;
+  @apply pointer-events-none absolute -inset-px z-[-1] select-none rounded-lg opacity-0 transition-opacity duration-300 content-[''] hover:opacity-100;
   background: radial-gradient(
     370px circle at var(--x) var(--y),
     rgba(146, 149, 255, 0.984) 25%,

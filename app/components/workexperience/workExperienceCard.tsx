@@ -72,9 +72,7 @@ const WorkExperienceCard: React.FC<IProps> = ({
           />
         </div>
         <div className="flex flex-col capitalize">
-          <p className="font-RobotoMono text-base text-gray-500 dark:text-gray-300">
-            {date}
-          </p>
+          <p className="text-base text-gray-500 dark:text-gray-300">{date}</p>
           <h1
             className={`font-semibold ${
               isHovered === true ? "underline decoration-2" : ""
@@ -82,9 +80,7 @@ const WorkExperienceCard: React.FC<IProps> = ({
           >
             {companyName}
           </h1>
-          <p className="font-RobotoMono text-gray-500 dark:text-gray-300">
-            {position}
-          </p>
+          <p className="text-gray-500 dark:text-gray-300">{position}</p>
         </div>
       </div>
     </motion.div>

@@ -73,7 +73,11 @@ const AboutPage = () => {
         </div>
         <div className="flex flex-col gap-4">
           <p>{AboutPageData.personalDetails03}</p>
-          <p>{AboutPageData.personalDetails04}</p>
+          <p>
+            Thank you for taking the time to know me! Let’s connect and explore
+            opportunities to collaborate on building exceptional web solutions
+            together!
+          </p>
         </div>
         <div>
           <h1 className="inline-block bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text py-5 text-xl font-bold text-transparent">
@@ -87,7 +91,7 @@ const AboutPage = () => {
                 thapabishal21dev@gmail.com{" "}
               </a>
             </span>
-            or find me on social media:
+            or find me here:
           </p>
         </div>
         <div>
@@ -221,16 +225,16 @@ const AboutPage = () => {
           </h1>
         </div>
         <WorkExperienceCard
-          position="Frontend developer"
-          companyName="yetitech solutions"
-          date="november 2023 - present"
+          position="Frontend Developer"
+          companyName="YetiTech Solutions"
+          date="November 2023 - September 2024"
           background="hover:bg-slate-100"
           darkBackground="dark:hover:bg-slate-900"
           logo="/yetitechsolutions.png"
         />
         <WorkExperienceCard
-          position="Frontend developer"
-          companyName="milo logic"
+          position="Frontend Intern"
+          companyName="Milo Logic"
           date=" May 2024 - July 2024"
           background="hover:bg-blue-100"
           darkBackground="dark:hover:bg-blue-950"
@@ -238,8 +242,8 @@ const AboutPage = () => {
         />
         <WorkExperienceCard
           position="Frontend Intern"
-          companyName="lancemeup"
-          date="june 2023 - september 2023"
+          companyName="Lancemeup"
+          date="June 2023 - September 2023"
           background="hover:bg-sky-100"
           darkBackground="dark:hover:bg-sky-950"
           logo="/lancemeup.png"

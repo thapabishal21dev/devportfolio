@@ -10,16 +10,16 @@ const Experience = () => {
         </h1>
       </div>
       <WorkExperienceCard
-        position="Frontend developer"
-        companyName="yetitech solutions"
-        date="november 2023 - present"
+        position="Frontend Developer"
+        companyName="YetiTech Solutions"
+        date="November 2023 - September 2024"
         background="hover:bg-slate-100"
         darkBackground="dark:hover:bg-slate-900"
         logo="/yetitechsolutions.png"
       />
       <WorkExperienceCard
-        position="Frontend developer"
-        companyName="milo logic"
+        position="Frontend Intern"
+        companyName="Milo Logic"
         date=" May 2024 - July 2024"
         background="hover:bg-blue-100"
         darkBackground="dark:hover:bg-blue-950"
@@ -27,8 +27,8 @@ const Experience = () => {
       />
       <WorkExperienceCard
         position="Frontend Intern"
-        companyName="lancemeup"
-        date="june 2023 - september 2023"
+        companyName="Lancemeup"
+        date="June 2023 - September 2023"
         background="hover:bg-sky-100"
         darkBackground="dark:hover:bg-sky-950"
         logo="/lancemeup.png"
