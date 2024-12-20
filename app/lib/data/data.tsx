@@ -420,7 +420,7 @@ export const HomepageData: IHomePageData = {
   fullName: "Bishal Thapa",
   position: "Frontend Developer ",
   location: "Kathmandu, Nepal",
-  personalSummary: ` Passionate software developer specializing in front-end technologies with 1 and half years of experience
+  personalSummary: ` Passionate software developer specializing in front-end technologies with 1 year of experience
 creating visually engaging and user-friendly interfaces. My expertise includes seamlessly integrating UI
 elements, ensuring responsive design, optimizing performance for a smooth user experience, and
 implementing API integrations. I work proficiently with modern technologies, libraries, and frameworks
@@ -431,7 +431,7 @@ export const AboutPageData: IAboutPageData = {
   fullName: " Hey there! I'm Bishal Thapa",
   position: "Frontend Developer ",
   location: "from Kathmandu,Nepal",
-  personalDetails01: `I am a passionate software developer specializing in front-end technologies with one and half years of experience creating visually engaging and user-friendly interfaces. My expertise lies in seamlessly integrating UI elements, ensuring responsive design, optimizing performance for smooth user experiences, and implementing API integrations.
+  personalDetails01: `I am a passionate software developer specializing in front-end technologies with 1 and year of experience creating visually engaging and user-friendly interfaces. My expertise lies in seamlessly integrating UI elements, ensuring responsive design, optimizing performance for smooth user experiences, and implementing API integrations.
 
 `,
   personalDetails02: `
