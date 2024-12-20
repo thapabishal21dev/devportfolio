@@ -226,8 +226,8 @@ const AboutPage = () => {
         </div>
         <WorkExperienceCard
           position="Frontend Developer"
-          companyName="YetiTech Solutions"
-          date="November 2023 - September 2024"
+          companyName="YetiTech Solutions -Freelancher"
+          date="November 2023 - December 2024"
           background="hover:bg-slate-100"
           darkBackground="dark:hover:bg-slate-900"
           logo="/yetitechsolutions.png"
